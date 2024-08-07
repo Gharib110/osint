@@ -1,0 +1,961 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<style type=text/css>body{font-family:monospace;}</style>
+	<title>Infosec Tools</title>
+	
+	
+	<link rel="stylesheet" href="/css/style.css">
+	
+	
+</head>
+<body>
+	<header>
+	==================<br>
+	== <a href="https://0sint.ir/">Osint Topics</a> ==<br>
+	==================
+	<div style="float: right;">OSINT Topics</div><br>
+	<p>
+	<nav>
+			<a href="/"><b>Start</b></a>.
+			
+			
+			<a href="/posts/"><b>Posts</b></a>.
+			
+			<a href="/categories/"><b>Categories</b></a>.
+			
+			<a href="/tags/"><b>Tags</b></a>.
+			
+	</nav>
+	</p>
+	
+</header>
+
+	
+	<main>
+		<article>
+			<h1>Infosec Tools</h1>
+			<b><time>29.07.2024 00:00</time></b>
+		       
+
+			<div>
+				<h1 id="infosec">Infosec</h1>
+<p>===============
+A curated list of awesome information security resources.</p>
+<p>Those resources and tools are intended only for cybersecurity professional and educational use in a controlled environment.</p>
+<h2 id="table-of-contents">Table of Contents</h2>
+<p>=================</p>
+<ol>
+<li><a href="#massive-online-open-courses">Massive Online Open Courses</a></li>
+<li><a href="#academic-courses">Academic Courses</a></li>
+<li><a href="#laboratories">Laboratories</a></li>
+<li><a href="#capture-the-flag">Capture the Flag</a></li>
+<li><a href="#open-security-books">Open Security Books</a></li>
+<li><a href="#challenges">Challenges</a></li>
+<li><a href="#documentation">Documentation</a></li>
+<li><a href="#securitytube-playlists">SecurityTube Playlists</a></li>
+<li><a href="#related-awesome-lists">Related Awesome Lists</a></li>
+</ol>
+<h2 id="massive-online-open-courses">Massive Online Open Courses</h2>
+<p>===========================</p>
+<h4 id="stanford-university---computer-security">Stanford University - Computer Security</h4>
+<p>In this class you will learn how to design secure systems and write secure code. You will learn how to find vulnerabilities in code and how to design software systems that limit the impact of security vulnerabilities. We will focus on principles for building secure systems and give many real world examples.</p>
+<ul>
+<li><a href="https://www.coursera.org/learn/security">Stanford University - Computer Security</a></li>
+</ul>
+<h4 id="stanford-university---cryptography-i">Stanford University - Cryptography I</h4>
+<p>This course explains the inner workings of cryptographic primitives and how to correctly use them. Students will learn how to reason about the security of cryptographic constructions and how to apply this knowledge to real-world applications. The course begins with a detailed discussion of how two parties who have a shared secret key can communicate securely when a powerful adversary eavesdrops and tampers with traffic. We will examine many deployed protocols and analyze mistakes in existing systems. The second half of the course discusses public-key techniques that let two or more parties generate a shared secret key. We will cover the relevant number theory and discuss public-key encryption and basic key-exchange. Throughout the course students will be exposed to many exciting open problems in the field.</p>
+<ul>
+<li><a href="https://www.coursera.org/learn/crypto">Stanford University - Cryptography I</a></li>
+</ul>
+<h4 id="stanford-university---cryptography-ii">Stanford University - Cryptography II</h4>
+<p>This course is a continuation of Crypto I and explains the inner workings of public-key systems and cryptographic protocols.   Students will learn how to reason about the security of cryptographic constructions and how to apply this knowledge to real-world applications. The course begins with constructions for digital signatures and their applications.   We will then discuss protocols for user authentication and zero-knowledge protocols.    Next we will turn to privacy applications of cryptography supporting anonymous credentials and private database lookup.  We will conclude with more advanced topics including multi-party computation and elliptic curve cryptography.</p>
+<ul>
+<li><a href="https://www.coursera.org/learn/crypto2">Stanford University - Cryptography II</a></li>
+</ul>
+<h4 id="university-of-maryland---usable-security">University of Maryland - Usable Security</h4>
+<p>This course focuses on how to design and build secure systems with a human-centric focus. We will look at basic principles of human-computer interaction, and apply these insights to the design of secure systems with the goal of developing security measures that respect human performance and their goals within a system.</p>
+<ul>
+<li><a href="https://www.coursera.org/learn/usablesec">University of Maryland - Usable Security</a></li>
+</ul>
+<h4 id="university-of-maryland---software-security">University of Maryland - Software Security</h4>
+<p>This course we will explore the foundations of software security. We will consider important software vulnerabilities and attacks that exploit them &ndash; such as buffer overflows, SQL injection, and session hijacking &ndash; and we will consider defenses that prevent or mitigate these attacks, including advanced testing and program analysis techniques. Importantly, we take a &ldquo;build security in&rdquo; mentality, considering techniques at each phase of the development cycle that can be used to strengthen the security of software systems.</p>
+<ul>
+<li><a href="https://www.coursera.org/learn/softwaresec">University of Maryland - Software Security</a></li>
+</ul>
+<h4 id="university-of-maryland---cryptography">University of Maryland - Cryptography</h4>
+<p>This course will introduce you to the foundations of modern cryptography, with an eye toward practical applications. We will learn the importance of carefully defining security; of relying on a set of well-studied &ldquo;hardness assumptions&rdquo; (e.g., the hardness of factoring large numbers); and of the possibility of proving security of complicated constructions based on low-level primitives. We will not only cover these ideas in theory, but will also explore their real-world impact. You will learn about cryptographic primitives in wide use today, and see how these can be combined to develop modern protocols for secure communication.</p>
+<ul>
+<li><a href="https://www.coursera.org/learn/cryptography">University of Maryland - Cryptography</a></li>
+</ul>
+<h4 id="university-of-maryland---hardware-security">University of Maryland - Hardware Security</h4>
+<p>This course will introduce you to the foundations of modern cryptography, with an eye toward practical applications. We will learn the importance of carefully defining security; of relying on a set of well-studied “hardness assumptions” (e.g., the hardness of factoring large numbers); and of the possibility of proving security of complicated constructions based on low-level primitives. We will not only cover these ideas in theory, but will also explore their real-world impact. You will learn about cryptographic primitives in wide use today, and see how these can be combined to develop modern protocols for secure communication.</p>
+<ul>
+<li><a href="https://www.coursera.org/learn/hardwaresec">University of Maryland - Hardware Security</a></li>
+</ul>
+<h4 id="university-of-washington---introduction-to-cybersecurity">University of Washington - Introduction to CyberSecurity</h4>
+<p>This course will introduce you to the cybersecurity, ideal for learners who are curious about the world of Internet security and who want to be literate in the field. This course will take a ride in to cybersecurity feild for beginners.</p>
+<ul>
+<li><a href="https://www.edx.org/course/introduction-to-cybersecurity">University of Washington - Introduction to CyberSecurity</a></li>
+</ul>
+<h4 id="university-of-washington---finding-your-cybersecurity-career-path">University of Washington - Finding Your Cybersecurity Career Path</h4>
+<p>There are 5-6 major job roles in industry for cybersecurity enthusiast. In This course you will Learn about different career pathways in cybersecurity and complete a self-assessment project to better understand the right path for you.</p>
+<ul>
+<li><a href="https://www.edx.org/course/finding-your-cybersecurity-career-path">University of Washington - Finding Your Cybersecurity Career Path</a></li>
+</ul>
+<h4 id="university-of-washington---essentials-of-cybersecurity">University of Washington - Essentials of Cybersecurity</h4>
+<p>This course is good for beginner It contains introduction to cybersecurity, The CISO&rsquo;s view, Helps you building cybersecurity toolKit and find your cybersecurity career path.</p>
+<ul>
+<li><a href="https://www.edx.org/professional-certificate/uwashingtonx-essentials-cybersecurity">University of Washington - Essentials of Cybersecurity</a></li>
+</ul>
+<h1 id="academic-courses">Academic Courses</h1>
+<h4 id="nyu-tandon-school-of-engineering---osiris-labs-hack-night">NYU Tandon School of Engineering - OSIRIS Lab&rsquo;s Hack Night</h4>
+<p>Developed from the materials of NYU Tandon&rsquo;s old Penetration Testing and Vulnerability Analysis course, Hack Night is a sobering introduction to offensive security. A lot of complex technical content is covered very quickly as students are introduced to a wide variety of complex and immersive topics over thirteen weeks.</p>
+<ul>
+<li><a href="https://github.com/isislab/Hack-Night">NYU Tandon&rsquo;s OSIRIS Lab&rsquo;s Hack Night</a></li>
+</ul>
+<h4 id="florida-state-universitys---offensive-computer-security">Florida State University&rsquo;s - Offensive Computer Security</h4>
+<p>The primary incentive for an attacker to exploit a vulnerability, or series of vulnerabilities is to achieve a return on an investment (his/her time usually). This return need not be strictly monetary, an attacker may be interested in obtaining access to data, identities, or some other commodity that is valuable to them.  The field of penetration testing involves authorized auditing and exploitation of systems to assess actual system security in order to protect against attackers.  This requires thorough knowledge of vulnerabilities and how to exploit them.  Thus, this course provides an introductory but comprehensive coverage of the fundamental methodologies, skills, legal issues, and tools used in white hat penetration testing and secure system administration.</p>
+<ul>
+<li><a href="http://www.cs.fsu.edu/~redwood/OffensiveComputerSecurity">Offensive Computer Security - Spring 2014</a></li>
+<li><a href="http://www.cs.fsu.edu/~redwood/OffensiveSecurity">Offensive Computer Security - Spring 2013</a></li>
+</ul>
+<h4 id="florida-state-universitys---offensive-network-security">Florida State University&rsquo;s - Offensive Network Security</h4>
+<p>This class allows students to look deep into know protocols (i.e. IP, TCP, UDP) to see how an attacker can utilize these protocols to their advantage and how to spot issues in a network via captured network traffic.
+The first half of this course focuses on know protocols while the second half of the class focuses on reverse engineering unknown protocols. This class will utilize captured traffic to allow students to reverse the protocol by using known techniques such as incorporating bioinformatics introduced by Marshall Beddoe. This class will also cover fuzzing protocols to see if the server or client have vulnerabilities. Overall, a student finishing this class will have a better understanding of the network layers, protocols, and network communication and their interaction in computer networks.</p>
+<ul>
+<li><a href="http://www.cs.fsu.edu/~lawrence/OffNetSec/">Offensive Network Security</a></li>
+</ul>
+<h4 id="rensselaer-polytechnic-institute---malware-analysis">Rensselaer Polytechnic Institute - Malware Analysis</h4>
+<p>This course will introduce students to modern malware analysis techniques through readings and hands-on interactive analysis of real-world samples. After taking this course students will be equipped with the skills to analyze advanced contemporary malware using both static and dynamic analysis.</p>
+<ul>
+<li><a href="https://github.com/RPISEC/Malware">CSCI 4976 - Fall &lsquo;15 Malware Analysis</a></li>
+</ul>
+<h4 id="rensselaer-polytechnic-institute---modern-binary-exploitation">Rensselaer Polytechnic Institute - Modern Binary Exploitation</h4>
+<p>This course will start off by covering basic x86 reverse engineering, vulnerability analysis, and classical forms of Linux-based userland binary exploitation. It will then transition into protections found on modern systems (Canaries, DEP, ASLR, RELRO, Fortify Source, etc) and the techniques used to defeat them. Time permitting, the course will also cover other subjects in exploitation including kernel-land and Windows based exploitation.</p>
+<ul>
+<li><a href="https://github.com/RPISEC/MBE">CSCI 4968 - Spring &lsquo;15 Modern Binary Exploitation</a></li>
+</ul>
+<h4 id="rensselaer-polytechnic-institute---hardware-reverse-engineering">Rensselaer Polytechnic Institute - Hardware Reverse Engineering</h4>
+<p>Reverse engineering techniques for semiconductor devices and their applications to competitive analysis, IP litigation, security testing, supply chain verification, and failure analysis. IC packaging technologies and sample preparation techniques for die recovery and live analysis. Deprocessing and staining methods for revealing features bellow top passivation. Memory technologies and appropriate extraction techniques for each. Study contemporary anti-tamper/anti-RE methods and their effectiveness at protecting designs from attackers. Programmable logic microarchitecture and the issues involved with reverse engineering programmable logic.</p>
+<ul>
+<li><a href="http://security.cs.rpi.edu/courses/hwre-spring2014/">CSCI 4974/6974 - Spring &lsquo;14 Hardware Reverse Engineering</a></li>
+</ul>
+<h4 id="city-college-of-san-francisco---sam-bowne-class">City College of San Francisco - Sam Bowne Class</h4>
+<ul>
+<li>
+<p><a href="https://samsclass.info/40/40_F16.shtml">CNIT 40: DNS Security </a><!-- raw HTML omitted -->
+DNS is crucial for all Internet transactions, but it is subject to numerous security risks, including phishing, hijacking, packet amplification, spoofing, snooping, poisoning, and more. Learn how to configure secure DNS servers, and to detect malicious activity with DNS monitoring. We will also cover DNSSEC principles and deployment. Students will perform hands-on projects deploying secure DNS servers on both Windows and Linux platforms.</p>
+</li>
+<li>
+<p><a href="https://samsclass.info/120/120_S15.shtml">CNIT 120 - Network Security</a><!-- raw HTML omitted -->
+Knowledge and skills required for Network Administrators and Information Technology professionals to be aware of security vulnerabilities, to implement security measures, to analyze an existing network environment in consideration of known security threats or risks, to defend against attacks or viruses, and to ensure data privacy and integrity. Terminology and procedures for implementation and configuration of security, including access control, authorization, encryption, packet filters, firewalls, and Virtual Private Networks (VPNs).</p>
+</li>
+<li>
+<p><a href="https://samsclass.info/121/121_F16.shtml">CNIT 121 - Computer Forensics</a><!-- raw HTML omitted -->
+The class covers forensics tools, methods, and procedures used for investigation of computers, techniques of data recovery and evidence collection, protection of evidence, expert witness skills, and computer crime investigation techniques. Includes analysis of various file systems and specialized diagnostic software used to retrieve data. Prepares for part of the industry standard certification exam, Security+, and also maps to the Computer Investigation Specialists exam.</p>
+</li>
+<li>
+<p><a href="https://samsclass.info/123/123_S17.shtml">CNIT 123 - Ethical Hacking and Network Defense</a><!-- raw HTML omitted -->
+Students learn how hackers attack computers and networks, and how to protect systems from such attacks, using both Windows and Linux systems. Students will learn legal restrictions and ethical guidelines, and will be required to obey them. Students will perform many hands-on labs, both attacking and defending, using port scans, footprinting, exploiting Windows and Linux vulnerabilities, buffer overflow exploits, SQL injection, privilege escalation, Trojans, and backdoors.</p>
+</li>
+<li>
+<p><a href="https://samsclass.info/124/124_F15.shtml">CNIT 124 - Advanced Ethical Hacking</a><!-- raw HTML omitted -->
+Advanced techniques of defeating computer security, and countermeasures to protect Windows and Unix/Linux systems. Hands-on labs include Google hacking, automated footprinting, sophisticated ping and port scans, privilege escalation, attacks against telephone and Voice over Internet Protocol (VoIP) systems, routers, firewalls, wireless devices, Web servers, and Denial of Service attacks.</p>
+</li>
+<li>
+<p><a href="https://samsclass.info/126/126_S16.shtml">CNIT 126 - Practical Malware Analysis</a><!-- raw HTML omitted -->
+Learn how to analyze malware, including computer viruses, trojans, and rootkits, using disassemblers, debuggers, static and dynamic analysis, using IDA Pro, OllyDbg and other tools.</p>
+</li>
+<li>
+<p><a href="https://samsclass.info/127/127_S17.shtml">CNIT 127 - Exploit Development</a><!-- raw HTML omitted -->
+Learn how to find vulnerabilities and exploit them to gain control of target systems, including Linux, Windows, Mac, and Cisco. This class covers how to write tools, not just how to use them; essential skills for advanced penetration testers and software security professionals.</p>
+</li>
+<li>
+<p><a href="https://samsclass.info/128/128_S17.shtml">CNIT 128 - Hacking Mobile Devices</a><!-- raw HTML omitted -->
+Mobile devices such as smartphones and tablets are now used for making purchases, emails, social networking, and many other risky activities. These devices run specialized operating systems have many security problems. This class will cover how mobile operating systems and apps work, how to find and exploit vulnerabilities in them, and how to defend them. Topics will include phone call, voicemail, and SMS intrusion, jailbreaking, rooting, NFC attacks, malware, browser exploitation, and application vulnerabilities. Hands-on projects will include as many of these activities as are practical and legal.</p>
+</li>
+<li>
+<p><a href="https://samsclass.info/129S/129S_F16.shtml">CNIT 129S: Securing Web Applications</a><!-- raw HTML omitted -->
+Techniques used by attackers to breach Web applications, and how to protect them. How to secure authentication, access, databases, and back-end components. How to protect users from each other. How to find common vulnerabilities in compiled code and source code.</p>
+</li>
+<li>
+<p><a href="https://samsclass.info/140/140_F16.shtml">CNIT 140: IT Security Practices</a><!-- raw HTML omitted -->
+Training students for cybersecurity competitions, including CTF events and the <a href="http://www.nationalccdc.org/">Collegiate Cyberdefense Competition (CCDC)</a>. This training will prepare students for employment as security professionals, and if our team does well in the competitions, the competitors will gain recognition and respect which should lead to more and better job offers.</p>
+</li>
+<li>
+<p><a href="https://samsclass.info/127/127_WWC_2014.shtml">Violent Python and Exploit Development</a><!-- raw HTML omitted -->
+In the exploit development section, students will take over vulnerable systems with simple Python scripts.</p>
+</li>
+</ul>
+<h4 id="university-of-cincinnati---cs6038cs5138-malware-analysis">University of Cincinnati - CS6038/CS5138 Malware Analysis</h4>
+<p>This class will introduce the CS graduate students to malware concepts, malware analysis, and black-box reverse engineering techniques. The target audience is focused on computer science graduate students or undergraduate seniors without prior cyber security or malware experience. It is intended to introduce the students to types of malware, common attack recipes, some tools, and a wide array of malware analysis techniques.</p>
+<ul>
+<li><a href="https://class.malware.re/">CS6038/CS5138 Malware Analysis</a></li>
+</ul>
+<h4 id="eurecom---mobile-systems-and-smartphone-security-mobisec">Eurecom - Mobile Systems and Smartphone Security (MOBISEC)</h4>
+<p>Hands-On course coverings topics such as mobile ecosystem, the design and architecture of mobile operating systems, application analysis, reverse engineering, malware detection, vulnerability assessment, automatic static and dynamic analysis, and exploitation and mitigation techniques.
+Besides the slides for the course, there are also multiple challenges covering mobile app development, reversing and exploitation.</p>
+<ul>
+<li><a href="https://mobisec.reyammer.io/">MOBISEC2018</a></li>
+</ul>
+<h2 id="open-security-training">Open Security Training</h2>
+<p>OpenSecurityTraining.info is dedicated to sharing training material for computer security classes, on any topic, that are at least one day long.</p>
+<h4 id="beginner-classes">Beginner Classes</h4>
+<ul>
+<li>
+<p><a href="http://opensecuritytraining.info/AndroidForensics.html">Android Forensics &amp; Security Testing</a><!-- raw HTML omitted -->
+This class serves as a foundation for mobile digital forensics, forensics of Android operating systems, and penetration testing of Android applications.</p>
+</li>
+<li>
+<p><a href="http://opensecuritytraining.info/CISSP-Main.html">Certified Information Systems Security Professional (CISSP)® <!-- raw HTML omitted -->Common Body of Knowledge (CBK)® Review</a><!-- raw HTML omitted -->
+The CISSP CBK Review course is uniquely designed for federal agency information assurance (IA) professionals in meeting <a href="http://www.cnss.gov/Assets/pdf/nstissi_4011.pdf">NSTISSI-4011</a>, National Training Standard for Information Systems Security Professionals, as required by <a href="http://www.dtic.mil/whs/directives/corres/pdf/857001m.pdf">DoD 8570.01-M</a>, Information Assurance Workforce Improvement Program.</p>
+</li>
+<li>
+<p><a href="http://opensecuritytraining.info/Flow.html">Flow Analysis &amp; Network Hunting</a><!-- raw HTML omitted -->
+This course focuses on network analysis and hunting of malicious activity from a security operations center perspective. We will dive into the netflow strengths, operational limitations of netflow, recommended sensor placement, netflow tools, visualization of network data, analytic trade craft for network situational awareness and networking hunting scenarios.</p>
+</li>
+<li>
+<p><a href="http://opensecuritytraining.info/HTID.html">Hacking Techniques and Intrusion Detection</a><!-- raw HTML omitted -->
+The course is designed to help students gain a detailed insight into the practical and theoretical aspects of advanced topics in hacking techniques and intrusion detection.</p>
+</li>
+<li>
+<p><a href="http://opensecuritytraining.info/IntroX86.html">Introductory Intel x86: Architecture, Assembly, Applications, &amp; Alliteration</a><!-- raw HTML omitted -->
+This class serves as a foundation for the follow on Intermediate level x86 class. It teaches the basic concepts and describes the hardware that assembly code deals with. It also goes over many of the most common assembly instructions. Although x86 has hundreds of special purpose instructions, students will be shown it is possible to read most programs by knowing only around 20-30 instructions and their variations.</p>
+</li>
+<li>
+<p><a href="http://opensecuritytraining.info/IntroX86-64.html">Introductory Intel x86-64: Architecture, Assembly, Applications, &amp; Alliteration</a><!-- raw HTML omitted -->
+This class serves as a foundation for the follow on Intermediate level x86 class. It teaches the basic concepts and describes the hardware that assembly code deals with. It also goes over many of the most common assembly instructions. Although x86 has hundreds of special purpose instructions, students will be shown it is possible to read most programs by knowing only around 20-30 instructions and their variations.</p>
+</li>
+<li>
+<p><a href="http://opensecuritytraining.info/IntroARM.html">Introduction to ARM</a><!-- raw HTML omitted -->
+This class builds on the Intro to x86 class and tries to provide parallels and differences between the two processor architectures wherever possible while focusing on the ARM instruction set, some of the ARM processor features, and how software works and runs on the ARM processor.</p>
+</li>
+<li>
+<p><a href="http://opensecuritytraining.info/IntroCellSec.html">Introduction to Cellular Security</a><!-- raw HTML omitted -->
+This course is intended to demonstrate the core concepts of cellular network security. Although the course discusses GSM, UMTS, and LTE - it is heavily focused on LTE. The course first introduces important cellular concepts and then follows the evolution of GSM to LTE.</p>
+</li>
+<li>
+<p><a href="http://opensecuritytraining.info/NetworkForensics.html">Introduction to Network Forensics</a><!-- raw HTML omitted -->
+This is a mainly lecture based class giving an introduction to common network monitoring and forensic techniques.</p>
+</li>
+<li>
+<p><a href="http://opensecuritytraining.info/IntroSecureCoding.html">Introduction to Secure Coding</a><!-- raw HTML omitted -->
+This course provides a look at some of the most prevalent security related coding mistakes made in industry today.  Each type of issue is explained in depth including how a malicious user may attack the code, and strategies for avoiding the issues are then reviewed.</p>
+</li>
+<li>
+<p><a href="http://opensecuritytraining.info/IntroductionToVulnerabilityAssessment.html">Introduction to Vulnerability Assessment</a><!-- raw HTML omitted -->
+This is a lecture and lab based class giving an introduction to vulnerability assessment of some common common computing technologies.  Instructor-led lab exercises are used to demonstrate specific tools and technologies.</p>
+</li>
+<li>
+<p><a href="http://opensecuritytraining.info/IntroToTrustedComputing.html">Introduction to Trusted Computing</a><!-- raw HTML omitted -->
+This course is an introduction to the fundamental technologies behind Trusted Computing. You will learn what Trusted Platform Modules (TPMs) are and what capabilities they can provide both at an in-depth technical level and in an enterprise context. You will also learn about how other technologies such as the Dynamic Root of Trust for Measurement (DRTM) and virtualization can both take advantage of TPMs and be used to enhance the TPM&rsquo;s capabilities.</p>
+</li>
+<li>
+<p><a href="http://opensecuritytraining.info/WebIdentity.html">Offensive, Defensive, and Forensic Techniques for Determining Web User Identity</a><!-- raw HTML omitted -->
+This course looks at web users from a few different perspectives.  First, we look at identifying techniques to determine web user identities from a server perspective.  Second, we will look at obfuscating techniques from a user whom seeks to be anonymous.  Finally, we look at forensic techniques, which, when given a hard drive or similar media, we identify users who accessed that server.</p>
+</li>
+<li>
+<p><a href="http://opensecuritytraining.info/Pcap.html">Pcap Analysis &amp; Network Hunting</a><!-- raw HTML omitted -->
+Introduction to Packet Capture (PCAP) explains the fundamentals of how, where, and why to capture network traffic and what to do with it.  This class covers open-source tools like tcpdump, Wireshark, and ChopShop in several lab exercises that reinforce the material.  Some of the topics include capturing packets with tcpdump, mining DNS resolutions using only command-line tools, and busting obfuscated protocols.  This class will prepare students to tackle common problems and help them begin developing the skills to handle more advanced networking challenges.</p>
+</li>
+<li>
+<p><a href="http://opensecuritytraining.info/MalwareDynamicAnalysis.html">Malware Dynamic Analysis</a><!-- raw HTML omitted -->
+This introductory malware dynamic analysis class is dedicated to people who are starting to work on malware analysis or who want to know what kinds of artifacts left by malware can be detected via various tools. The class will be a hands-on class where students can use various tools to look for how malware is: Persisting, Communicating, and Hiding</p>
+</li>
+<li>
+<p><a href="http://opensecuritytraining.info/SecureCodeReview.html">Secure Code Review</a><!-- raw HTML omitted -->
+The course briefly talks about the development lifecycle and the importance of peer reviews in delivering a quality product. How to perform this review is discussed and how to keep secure coding a priority during the review is stressed. A variety of hands-on exercises will address common coding mistakes, what to focus on during a review, and how to manage limited time.</p>
+</li>
+<li>
+<p><a href="http://opensecuritytraining.info/SmartCards.html">Smart Cards</a><!-- raw HTML omitted -->
+This course shows how smart cards are different compared to other type of cards.
+It is explained how smart cards can be used to realize confidentiality and integrity of information.</p>
+</li>
+<li>
+<p><a href="http://opensecuritytraining.info/LifeOfBinaries.html">The Life of Binaries</a><!-- raw HTML omitted -->
+Along the way we discuss the relevance of security at different stages of a binary’s life, from the tricks that can be played by a malicious compiler, to how viruses really work, to the way which malware “packers” duplicate OS process execution functionality, to the benefit of a security-enhanced OS loader which implements address space layout randomization (ASLR).</p>
+</li>
+<li>
+<p><a href="http://opensecuritytraining.info/CryptoCore.html">Understanding Cryptology: Core Concepts</a><!-- raw HTML omitted -->
+This is an introduction to cryptology with a focus on applied cryptology. It was designed to be accessible to a wide audience, and therefore does not include a rigorous mathematical foundation (this will be covered in later classes).</p>
+</li>
+<li>
+<p><a href="http://opensecuritytraining.info/Cryptanalysis.html">Understanding Cryptology: Cryptanalysis</a><!-- raw HTML omitted -->
+A class for those who want to stop learning about building cryptographic systems and want to attack them. This course is a mixture of lecture designed to introduce students to a variety of code-breaking techniques and python labs to solidify those concepts. Unlike its sister class, <a href="http://opensecuritytraining.info/CryptoCore.html">Core Concepts</a>, math is necessary for this topic.</p>
+</li>
+</ul>
+<h4 id="intermediate-classes">Intermediate Classes</h4>
+<ul>
+<li>
+<p><a href="http://opensecuritytraining.info/Exploits1.html">Exploits 1: Introduction to Software Exploits</a><!-- raw HTML omitted -->
+Software vulnerabilities are flaws in program logic that can be leveraged by an attacker to execute arbitrary code on a target system. This class will cover both the identification of software vulnerabilities and the techniques attackers use to exploit them. In addition, current techniques that attempt to remediate the threat of software vulnerability exploitation will be discussed.</p>
+</li>
+<li>
+<p><a href="http://opensecuritytraining.info/Exploits2.html">Exploits 2: Exploitation in the Windows Environment</a><!-- raw HTML omitted -->
+This course covers the exploitation of stack corruption vulnerabilities in the Windows environment. Stack overflows are programming flaws that often times allow an attacker to execute arbitrary code in the context of a vulnerable program. There are many nuances involved with exploiting these vulnerabilities in Windows. Window&rsquo;s exploit mitigations such as DEP, ASLR, SafeSEH, and SEHOP, makes leveraging these programming bugs more difficult, but not impossible. The course highlights the features and weaknesses of many the exploit mitigation techniques deployed in Windows operating systems. Also covered are labs that describe the process of finding bugs in Windows applications with mutation based fuzzing, and then developing exploits that target those bugs.</p>
+</li>
+<li>
+<p><a href="http://opensecuritytraining.info/IntermediateX86.html">Intermediate Intel x86: Architecture, Assembly, Applications, &amp; Alliteration</a><!-- raw HTML omitted -->
+Building upon the Introductory Intel x86 class, this class goes into more depth on topics already learned, and introduces more advanced topics that dive deeper into how Intel-based systems work.</p>
+</li>
+</ul>
+<h4 id="advanced-classes">Advanced Classes</h4>
+<ul>
+<li>
+<p><a href="http://opensecuritytraining.info/AdvancedX86-VTX.html">Advanced x86: Virtualization with Intel VT-x</a><!-- raw HTML omitted -->
+The purpose of this course is to provide a hands on introduction to Intel hardware support for virtualization. The first part will motivate the challenges of virtualization in the absence of dedicated hardware. This is followed by a deep dive on the Intel virtualization &ldquo;API&rdquo; and labs to begin implementing a blue pill / hyperjacking attack made famous by researchers like Joanna Rutkowska and Dino Dai Zovi et al. Finally a discussion of virtualization detection techniques.</p>
+</li>
+<li>
+<p><a href="http://opensecuritytraining.info/IntroBIOS.html">Advanced x86: Introduction to BIOS &amp; SMM</a><!-- raw HTML omitted -->
+We will cover why the BIOS is critical to the security of the platform. This course will also show you what capabilities and opportunities are provided to an attacker when BIOSes are not properly secured. We will also provide you tools for performing vulnerability analysis on firmware, as well as firmware forensics. This class will take people with existing reverse engineering skills and teach them to analyze UEFI firmware. This can be used either for vulnerability hunting, or to analyze suspected implants found in a BIOS, without having to rely on anyone else.</p>
+</li>
+<li>
+<p><a href="http://opensecuritytraining.info/IntroductionToReverseEngineering.html">Introduction to Reverse Engineering Software</a><!-- raw HTML omitted -->
+Throughout the history of invention curious minds have sought to understand the inner workings of their gadgets. Whether investigating a broken watch, or improving an engine, these people have broken down their goods into their elemental parts to understand how they work. This is Reverse Engineering (RE), and it is done every day from recreating outdated and incompatible software, understanding malicious code, or exploiting weaknesses in software.</p>
+</li>
+<li>
+<p><a href="http://opensecuritytraining.info/ReverseEngineeringMalware.html">Reverse Engineering Malware</a><!-- raw HTML omitted -->
+This class picks up where the <a href="http://opensecuritytraining.info/IntroductionToReverseEngineering.html">Introduction to Reverse Engineering Software</a> course left off, exploring how static reverse engineering techniques can be used to understand what a piece of malware does and how it can be removed.</p>
+</li>
+<li>
+<p><a href="http://opensecuritytraining.info/Rootkits.html">Rootkits: What they are, and how to find them</a><!-- raw HTML omitted -->
+Rootkits are a class of malware which are dedicated to hiding the attacker’s presence on a compromised system. This class will focus on understanding how rootkits work, and what tools can be used to help find them.</p>
+</li>
+<li>
+<p><a href="http://opensecuritytraining.info/Keylogging.html">The Adventures of a Keystroke: An in-depth look into keylogging on Windows</a><!-- raw HTML omitted -->
+Keyloggers are one of the most widely used components in malware. Keyboard and mouse are the devices nearly all of the PCs are controlled by, this makes them an important target of malware authors. If someone can record your keystrokes then he can control your whole PC without you noticing.</p>
+</li>
+</ul>
+<h2 id="cybrary---online-cyber-security-training">Cybrary - Online Cyber Security Training</h2>
+<ul>
+<li>
+<p><a href="https://www.cybrary.it/course/comptia-aplus">CompTIA A+</a><!-- raw HTML omitted -->
+This course covers the fundamentals of computer technology, basic networking, installation and configuration of PCs, laptops and related hardware, as well as configuring common features for mobile operation systems Android and Apple iOS.</p>
+</li>
+<li>
+<p><a href="https://www.cybrary.it/course/comptia-linux-plus">CompTIA Linux+</a><!-- raw HTML omitted -->
+Our free, self-paced online Linux+ training prepares students with the knowledge to become a certified Linux+ expert, spanning a curriculum that covers Linux maintenance tasks, user assistance and installation and configuration.</p>
+</li>
+<li>
+<p><a href="https://www.cybrary.it/course/comptia-cloud-plus">CompTIA Cloud+</a><!-- raw HTML omitted -->
+Our free, online Cloud+ training addresses the essential knowledge for implementing, managing and maintaining cloud technologies as securely as possible. It covers cloud concepts and models, virtualization, and infrastructure in the cloud.</p>
+</li>
+<li>
+<p><a href="https://www.cybrary.it/course/comptia-network-plus">CompTIA Network+</a><!-- raw HTML omitted -->
+In addition to building one’s networking skill set, this course is also designed to prepare an individual for the Network+ certification exam, a distinction that can open a myriad of job opportunities from major companies</p>
+</li>
+<li>
+<p><a href="https://www.cybrary.it/course/comptia-casp">CompTIA Advanced Security Practitioner</a><!-- raw HTML omitted -->
+In our free online CompTIA CASP training, you’ll learn how to integrate advanced authentication, how to manage risk in the enterprise, how to conduct vulnerability assessments and how to analyze network security concepts and components.</p>
+</li>
+<li>
+<p><a href="https://www.cybrary.it/course/comptia-security-plus">CompTIA Security+</a><!-- raw HTML omitted -->
+Learn about general security concepts, basics of cryptography, communications security and operational and organizational security. With the increase of major security breaches that are occurring, security experts are needed now more than ever.</p>
+</li>
+<li>
+<p><a href="https://www.cybrary.it/course/itil">ITIL Foundation</a><!-- raw HTML omitted -->
+Our online ITIL Foundation training course provides baseline knowledge for IT service management best practices: how to reduce costs, increase enhancements in processes, improve IT productivity and overall customer satisfaction.</p>
+</li>
+<li>
+<p><a href="https://www.cybrary.it/course/cryptography">Cryptography</a><!-- raw HTML omitted -->
+In this online course we will be examining how cryptography is the cornerstone of security technologies, and how through its use of different encryption methods you can protect private or sensitive information from unauthorized access.</p>
+</li>
+<li>
+<p><a href="https://www.cybrary.it/course/cisco-ccna">Cisco CCNA</a><!-- raw HTML omitted -->
+Our free, online, self-paced CCNA training teaches students to install, configure, troubleshoot and operate LAN, WAN and dial access services for medium-sized networks. You’ll also learn how to describe the operation of data networks.</p>
+</li>
+<li>
+<p><a href="https://www.cybrary.it/course/virtualization-management">Virtualization Management</a><!-- raw HTML omitted -->
+Our free, self-paced online Virtualization Management training class focuses on installing, configuring and managing virtualization software. You’ll learn how to work your way around the cloud and how to build the infrastructure for it.</p>
+</li>
+<li>
+<p><a href="https://www.cybrary.it/course/ethical-hacking">Penetration Testing and Ethical Hacking</a><!-- raw HTML omitted -->
+If the idea of hacking as a career excites you, you’ll benefit greatly from completing this training here on Cybrary. You’ll learn how to exploit networks in the manner of an attacker, in order to find out how protect the system from them.</p>
+</li>
+<li>
+<p><a href="https://www.cybrary.it/course/computer-hacking-forensics-analyst">Computer and Hacking Forensics</a><!-- raw HTML omitted -->
+Love the idea of digital forensics investigation? That’s what computer forensics is all about. You’ll learn how to; determine potential online criminal activity at its inception, legally gather evidence, search and investigate wireless attacks.</p>
+</li>
+<li>
+<p><a href="https://www.cybrary.it/course/web-application-pen-testing">Web Application Penetration Testing</a><!-- raw HTML omitted -->
+In this course, SME, Raymond Evans, takes you on a wild and fascinating journey into the cyber security discipline of web application pentesting. This is a very hands-on course that will require you to set up your own pentesting environment.</p>
+</li>
+<li>
+<p><a href="https://www.cybrary.it/course/cisa">CISA - Certified Information Systems Auditor</a><!-- raw HTML omitted -->
+In order to face the dynamic requirements of meeting enterprise vulnerability management challenges, this course covers the auditing process to ensure that you have the ability to analyze the state of your organization and make changes where needed.</p>
+</li>
+<li>
+<p><a href="https://www.cybrary.it/course/secure-coding">Secure Coding</a><!-- raw HTML omitted -->
+Join industry leader Sunny Wear as she discusses secure coding guidelines and how secure coding is important when it comes to lowering risk and vulnerabilities. Learn about XSS, Direct Object Reference, Data Exposure, Buffer Overflows, &amp; Resource Management.</p>
+</li>
+<li>
+<p><a href="https://www.cybrary.it/course/nist-800-171-controlled-unclassified-information-course">NIST 800-171 Controlled Unclassified Information Course</a><!-- raw HTML omitted -->
+The Cybrary NIST 800-171 course covers the 14 domains of safeguarding controlled unclassified information in non-federal agencies. Basic and derived requirements are presented for each security domain as defined in the NIST 800-171 special publication.</p>
+</li>
+<li>
+<p><a href="https://www.cybrary.it/course/advanced-penetration-testing">Advanced Penetration Testing</a><!-- raw HTML omitted -->
+This course covers how to attack from the web using cross-site scripting, SQL injection attacks, remote and local file inclusion and how to understand the defender of the network you’re breaking into to. You’ll also learn tricks for exploiting a network.</p>
+</li>
+<li>
+<p><a href="https://www.cybrary.it/course/malware-analysis">Intro to Malware Analysis and Reverse Engineering</a><!-- raw HTML omitted -->
+In this course you’ll learn how to perform dynamic and static analysis on all major files types, how to carve malicious executables from documents and how to recognize common malware tactics and debug and disassemble malicious binaries.</p>
+</li>
+<li>
+<p><a href="https://www.cybrary.it/course/social-engineering">Social Engineering and Manipulation</a><!-- raw HTML omitted -->
+In this online, self-paced Social Engineering and Manipulation training class, you will learn how some of the most elegant social engineering attacks take place. Learn to perform these scenarios and what is done during each step of the attack.</p>
+</li>
+<li>
+<p><a href="https://www.cybrary.it/course/post-exploitation-hacking">Post Exploitation Hacking</a><!-- raw HTML omitted -->
+In this free self-paced online training course, you’ll cover three main topics: Information Gathering, Backdooring and Covering Steps, how to use system specific tools to get general information, listener shells, metasploit and meterpreter scripting.</p>
+</li>
+<li>
+<p><a href="https://www.cybrary.it/course/python">Python for Security Professionals</a><!-- raw HTML omitted -->
+This course will take you from basic concepts to advanced scripts in just over 10 hours of material, with a focus on networking and security.</p>
+</li>
+<li>
+<p><a href="https://www.cybrary.it/course/metasploit">Metasploit</a><!-- raw HTML omitted -->
+This free Metasploit training class will teach you to utilize the deep capabilities of Metasploit for penetration testing and help you to prepare to run vulnerability assessments for organizations of any size.</p>
+</li>
+<li>
+<p><a href="https://www.cybrary.it/course/isc2-certified-cloud-security-professional-ccsp">ISC2 CCSP - Certified Cloud Security Professional</a><!-- raw HTML omitted -->
+The reality is that attackers never rest, and along with the traditional threats targeting internal networks and systems, an entirely new variety specifically targeting the cloud has emerged.</p>
+</li>
+</ul>
+<p><strong>Executive</strong></p>
+<ul>
+<li>
+<p><a href="https://www.cybrary.it/course/cissp">CISSP - Certified Information Systems Security Professional</a><!-- raw HTML omitted -->
+Our free online CISSP (8 domains) training covers topics ranging from operations security, telecommunications, network and internet security, access control systems and methodology and business continuity planning.</p>
+</li>
+<li>
+<p><a href="https://www.cybrary.it/course/cism">CISM - Certified Information Security Manager</a><!-- raw HTML omitted -->
+Cybrary’s Certified Information Security Manager (CISM) course is a great fit for IT professionals looking to move up in their organization and advance their careers and/or current CISMs looking to learn about the latest trends in the IT industry.</p>
+</li>
+<li>
+<p><a href="https://www.cybrary.it/course/project-management-professional">PMP - Project Management Professional</a><!-- raw HTML omitted -->
+Our free online PMP training course educates on how to initiate, plan and manage a project, as well as the process behind analyzing risk, monitoring and controlling project contracts and how to develop schedules and budgets.</p>
+</li>
+<li>
+<p><a href="https://www.cybrary.it/course/crisc">CRISC - Certified in Risk and Information Systems Control</a><!-- raw HTML omitted -->
+Certified in Risk and Information Systems Control is for IT and business professionals who develop and maintain information system controls, and whose job revolves around security operations and compliance.</p>
+</li>
+<li>
+<p><a href="https://www.cybrary.it/course/risk-management-framework">Risk Management Framework</a><!-- raw HTML omitted -->
+The National Institute of Standards and Technology (NIST) established the Risk Management Framework (RMF) as a set of operational and procedural standards or guidelines that a US government agency must follow to ensure the compliance of its data systems.</p>
+</li>
+<li>
+<p><a href="https://www.cybrary.it/course/csslp-training">ISC2 CSSLP - Certified Secure Software Life-cycle Professional</a><!-- raw HTML omitted -->
+This course helps professionals in the industry build their credentials to advance within their organization, allowing them to learn valuable managerial skills as well as how to apply the best practices to keep organizations systems running well.</p>
+</li>
+<li>
+<p><a href="https://www.cybrary.it/course/cobit">COBIT - Control Objectives for Information and Related Technologies</a><!-- raw HTML omitted -->
+Cybrary’s online COBIT certification program offers an opportunity to learn about all the components of the COBIT 5 framework, covering everything from the business end-to-end to strategies in how effectively managing and governing enterprise IT.</p>
+</li>
+<li>
+<p><a href="https://www.cybrary.it/course/corporate-cybersecurity-management">Corporate Cybersecurity Management</a><!-- raw HTML omitted -->
+Cyber risk, legal considerations and insurance are often overlooked by businesses and this sets them up for major financial devastation should an incident occur.</p>
+</li>
+</ul>
+<h2 id="roppers-academy">Roppers Academy</h2>
+<p>Roppers is a community dedicated to providing free training to beginners so that they have the best introduction to the field possible and have the knowledge, skills, and confidence required to figure out what the next ten thousand hours will require them to learn.</p>
+<ul>
+<li>
+<p><a href="https://hoppersroppers.org/course.html">Introduction to Computing Fundamentals</a><!-- raw HTML omitted -->
+A free, self-paced curriculum designed to give a beginner all of the foundational knowledge and skills required to be successful. It teaches security fundamentals along with building a strong technical foundation that students will build on for years to come. Full text available as a <a href="https://www.hoppersroppers.org/fundamentals/">gitbook</a>. <strong>Learning Objectives:</strong> Linux, Hardware, Networking, Operating Systems, Power User, Scripting <strong>Pre-Reqs:</strong> None</p>
+</li>
+<li>
+<p><a href="https://hoppersroppers.github.io/courseCTF.html">Introduction to Capture the Flags</a><!-- raw HTML omitted -->
+Free course designed to teach the fundamentals required to be successful in Capture the Flag competitions and compete in the picoCTF event. Our mentors will track your progress and provide assistance every step of the way. Full text available as a <a href="https://www.hoppersroppers.org/ctf/">gitbook</a>. <strong>Learning Objectives:</strong> CTFs, Forensics, Cryptography, Web-Exploitation <strong>Pre-Reqs:</strong> Linux, Scripting</p>
+</li>
+<li>
+<p><a href="https://hoppersroppers.github.io/courseSecurity.html">Introduction to Security</a><!-- raw HTML omitted -->
+Free course designed to teach students security theory and have them execute defensive measures so that they are better prepared against threats online and in the physical world. Full text available as a <a href="https://www.hoppersroppers.org/security/">gitbook</a>. <strong>Learning Objectives:</strong> Security Theory, Practical Application, Real-World Examples <strong>Pre-Reqs:</strong> None</p>
+</li>
+</ul>
+<h1 id="laboratories">Laboratories</h1>
+<h2 id="syracuse-universitys-seed">Syracuse University&rsquo;s SEED</h2>
+<h3 id="hands-on-labs-for-security-education">Hands-on Labs for Security Education</h3>
+<p>Started in 2002, funded by a total of 1.3 million dollars from NSF, and now used by hundreds of educational institutes worldwide, the SEED project&rsquo;s objective is to develop hands-on laboratory exercises (called SEED labs) for computer and information security education and help instructors adopt these labs in their curricula.</p>
+<h3 id="software-security-labs">Software Security Labs</h3>
+<p>These labs cover some of the most common vulnerabilities in general software. The labs show students how attacks work in exploiting these vulnerabilities.</p>
+<ul>
+<li>
+<p><a href="http://www.cis.syr.edu/~wedu/seed/Labs_12.04/Software/Buffer_Overflow">Buffer-Overflow Vulnerability Lab</a><!-- raw HTML omitted -->
+Launching attack to exploit the buffer-overflow vulnerability using shellcode. Conducting experiments with several countermeasures.</p>
+</li>
+<li>
+<p><a href="http://www.cis.syr.edu/~wedu/seed/Labs_12.04/Software/Return_to_libc">Return-to-libc Attack Lab</a><!-- raw HTML omitted -->
+Using the return-to-libc technique to defeat the &ldquo;non-executable stack&rdquo; countermeasure of the buffer-overflow attack.</p>
+</li>
+<li>
+<p><a href="http://www.cis.syr.edu/~wedu/seed/Labs_12.04/Software/Environment_Variable_and_SetUID">Environment Variable and Set-UID Lab</a><!-- raw HTML omitted -->
+This is a redesign of the Set-UID lab (see below).</p>
+</li>
+<li>
+<p><a href="http://www.cis.syr.edu/~wedu/seed/Labs_12.04/Software/Set-UID">Set-UID Program Vulnerability Lab</a><!-- raw HTML omitted -->
+Launching attacks on privileged Set-UID root program. Risks of environment variables. Side effects of system().</p>
+</li>
+<li>
+<p><a href="http://www.cis.syr.edu/~wedu/seed/Labs_12.04/Software/Race_Condition">Race-Condition Vulnerability Lab</a><!-- raw HTML omitted -->
+Exploiting the race condition vulnerability in privileged program. Conducting experiments with various countermeasures.</p>
+</li>
+<li>
+<p><a href="http://www.cis.syr.edu/~wedu/seed/Labs_12.04/Software/Format_String">Format-String Vulnerability Lab</a><!-- raw HTML omitted -->
+Exploiting the format string vulnerability to crash a program, steal sensitive information, or modify critical data.</p>
+</li>
+<li>
+<p><a href="http://www.cis.syr.edu/~wedu/seed/Labs_12.04/Software/Shellshock">Shellshock Attack Lab</a><!-- raw HTML omitted -->
+Launch attack to exploit the Shellshock vulnerability that is discovered in late 2014.</p>
+</li>
+</ul>
+<h3 id="network-security-labs">Network Security Labs</h3>
+<p>These labs cover topics on network security, ranging from attacks on TCP/IP and DNS to various network security technologies (Firewall, VPN, and IPSec).</p>
+<ul>
+<li>
+<p><a href="http://www.cis.syr.edu/~wedu/seed/Labs_12.04/Networking/TCPIP">TCP/IP Attack Lab</a><!-- raw HTML omitted -->
+Launching attacks to exploit the vulnerabilities of the TCP/IP protocol, including session hijacking, SYN flooding, TCP reset attacks, etc.</p>
+</li>
+<li>
+<p><a href="http://www.cis.syr.edu/~wedu/seed/Labs_12.04/Networking/Heartbleed">Heartbleed Attack Lab</a><!-- raw HTML omitted -->
+Using the heartbleed attack to steal secrets from a remote server.</p>
+</li>
+<li>
+<p><a href="http://www.cis.syr.edu/~wedu/seed/Labs_12.04/Networking/DNS_Local">Local DNS Attack Lab</a><!-- raw HTML omitted -->
+Using several methods to conduct DNS pharming attacks on computers in a LAN environment.</p>
+</li>
+<li>
+<p><a href="http://www.cis.syr.edu/~wedu/seed/Labs_12.04/Networking/DNS_Remote">Remote DNS Attack Lab</a><!-- raw HTML omitted -->
+Using the Kaminsky method to launch DNS cache poisoning attacks on remote DNS servers.</p>
+</li>
+<li>
+<p><a href="http://www.cis.syr.edu/~wedu/seed/Labs_12.04/Networking/Sniffing_Spoofing">Packet Sniffing and Spoofing Lab</a><!-- raw HTML omitted -->
+Writing programs to sniff packets sent over the local network; writing programs to spoof various types of packets.</p>
+</li>
+<li>
+<p><a href="http://www.cis.syr.edu/~wedu/seed/Labs_12.04/Networking/Firewall_Linux">Linux Firewall Exploration Lab</a><!-- raw HTML omitted -->
+Writing a simple packet-filter firewall; playing with Linux&rsquo;s built-in firewall software and web-proxy firewall; experimenting with ways to evade firewalls.</p>
+</li>
+<li>
+<p><a href="http://www.cis.syr.edu/~wedu/seed/Labs_12.04/Networking/Firewall_VPN">Firewall-VPN Lab: Bypassing Firewalls using VPN</a><!-- raw HTML omitted -->
+Implement a simple vpn program (client/server), and use it to bypass firewalls.</p>
+</li>
+<li>
+<p><a href="http://www.cis.syr.edu/~wedu/seed/Labs_12.04/Networking/VPN">Virtual Private Network (VPN) Lab</a><!-- raw HTML omitted -->
+Design and implement a transport-layer VPN system for Linux, using the TUN/TAP technologies. This project requires at least a month of time to finish, so it is good for final project.</p>
+</li>
+<li>
+<p><a href="http://www.cis.syr.edu/~wedu/seed/Labs_12.04/Networking/IPSec">Minix IPSec Lab</a><!-- raw HTML omitted -->
+Implement the IPSec protocol in the Minix operating system and use it to set up Virtual Private Networks.</p>
+</li>
+<li>
+<p><a href="http://www.cis.syr.edu/~wedu/seed/Labs_12.04/Networking/Firewall_Minix">Minix Firewall Lab</a><!-- raw HTML omitted -->
+Implementing a simple firewall in Minix operating system.</p>
+</li>
+</ul>
+<h3 id="web-security-labs">Web Security Labs</h3>
+<p>These labs cover some of the most common vulnerabilities in web applications. The labs show students how attacks work in exploiting these vulnerabilities.</p>
+<h4 id="elgg-based-labs">Elgg-Based Labs</h4>
+<p>Elgg is an open-source social-network system. We have modified it for our labs.</p>
+<ul>
+<li>
+<p><a href="http://www.cis.syr.edu/~wedu/seed/Labs_12.04/Web/Web_XSS_Elgg">Cross-Site Scripting Attack Lab</a><!-- raw HTML omitted -->
+Launching the cross-site scripting attack on a vulnerable web application. Conducting experiments with several countermeasures.</p>
+</li>
+<li>
+<p><a href="http://www.cis.syr.edu/~wedu/seed/Labs_12.04/Web/Web_CSRF_Elgg">Cross-Site Request Forgery Attack Lab</a><!-- raw HTML omitted -->
+Launching the cross-site request forgery attack on a vulnerable web application. Conducting experiments with several countermeasures.</p>
+</li>
+<li>
+<p><a href="http://www.cis.syr.edu/~wedu/seed/Labs_12.04/Web/Web_Tracking_Elgg">Web Tracking Lab</a><!-- raw HTML omitted -->
+Experimenting with the web tracking technology to see how users can be checked when they browse the web.</p>
+</li>
+<li>
+<p><a href="http://www.cis.syr.edu/~wedu/seed/Labs_12.04/Web/Web_SQL_Injection">SQL Injection Attack Lab</a><!-- raw HTML omitted -->
+Launching the SQL-injection attack on a vulnerable web application. Conducting experiments with several countermeasures.</p>
+</li>
+</ul>
+<h4 id="collabtive-based-labs">Collabtive-Based Labs</h4>
+<p>Collabtive is an open-source web-based project management system. We have modified it for our labs.</p>
+<ul>
+<li>
+<p><a href="http://www.cis.syr.edu/~wedu/seed/Labs/Web/XSS_Collabtive">Cross-site Scripting Attack Lab</a><!-- raw HTML omitted -->
+Launching the cross-site scripting attack on a vulnerable web application. Conducting experiments with several countermeasures.</p>
+</li>
+<li>
+<p><a href="http://www.cis.syr.edu/~wedu/seed/Labs/Web/CSRF_Collabtive">Cross-site Request Forgery Attack Lab</a><!-- raw HTML omitted -->
+Launching the cross-site request forgery attack on a vulnerable web application. Conducting experiments with several countermeasures.</p>
+</li>
+<li>
+<p><a href="http://www.cis.syr.edu/~wedu/seed/Labs/Web/SQL_Injection_Collabtive">SQL Injection Lab</a><!-- raw HTML omitted -->
+Launching the SQL-injection attack on a vulnerable web application. Conducting experiments with several countermeasures.</p>
+</li>
+<li>
+<p><a href="http://www.cis.syr.edu/~wedu/seed/Labs/Web/Web_SOP_Collabtive">Web Browser Access Control Lab</a><!-- raw HTML omitted -->
+Exploring browser&rsquo;s access control system to understand its security policies.</p>
+</li>
+</ul>
+<h4 id="phpbb-based-labs">PhpBB-Based Labs</h4>
+<p>PhpBB is an open-source web-based message board system, allowing users to post messages. We have modified it for our labs.</p>
+<ul>
+<li>
+<p><a href="http://www.cis.syr.edu/~wedu/seed/Labs/Attacks_XSS">Cross-site Scripting Attack Lab</a><!-- raw HTML omitted -->
+Launching the cross-site scripting attack on a vulnerable web application. Conducting experiments with several countermeasures.</p>
+</li>
+<li>
+<p><a href="http://www.cis.syr.edu/~wedu/seed/Labs/Attacks_CSRF">Cross-site Request Forgery Attack Lab</a><!-- raw HTML omitted -->
+Launching the cross-site request forgery attack on a vulnerable web application. Conducting experiments with several countermeasures.</p>
+</li>
+<li>
+<p><a href="http://www.cis.syr.edu/~wedu/seed/Labs/Attacks_SQL_Injection">SQL Injection Lab</a><!-- raw HTML omitted -->
+Launching the SQL-injection attack on a vulnerable web application. Conducting experiments with several countermeasures.</p>
+</li>
+<li>
+<p><a href="http://www.cis.syr.edu/~wedu/seed/Labs/Vulnerability/ClickJacking">ClickJacking Attack Lab</a><!-- raw HTML omitted -->
+Launching the ClickJacking attack on a vulnerable web site. Conducting experiments with several countermeasures.</p>
+</li>
+</ul>
+<h3 id="system-security-labs">System Security Labs</h3>
+<p>These labs cover the security mechanisms in operating system, mostly focusing on access control mechanisms in Linux.</p>
+<ul>
+<li>
+<p><a href="http://www.cis.syr.edu/~wedu/seed/Labs_12.04/System/Capability_Exploration">Linux Capability Exploration Lab</a><!-- raw HTML omitted -->
+Exploring the POSIX 1.e capability system in Linux to see how privileges can be divided into smaller pieces to ensure the compliance with the Least Privilege principle.</p>
+</li>
+<li>
+<p><a href="http://www.cis.syr.edu/~wedu/seed/Labs_12.04/System/RBAC_Cap">Role-Based Access Control (RBAC) Lab</a><!-- raw HTML omitted -->
+Designing and implementing an integrated access control system for Minix that uses both capability-based and role-based access control mechanisms. Students need to modify the Minix kernel.</p>
+</li>
+<li>
+<p><a href="http://www.cis.syr.edu/~wedu/seed/Labs_12.04/System/EFS">Encrypted File System Lab</a><!-- raw HTML omitted -->
+Designing and implementing an encrypted file system for Minix. Students need to modify the Minix kernel.</p>
+</li>
+</ul>
+<h3 id="cryptography-labs">Cryptography Labs</h3>
+<p>These labs cover three essential concepts in cryptography, including secrete-key encryption, one-way hash function, and public-key encryption and PKI.</p>
+<ul>
+<li>
+<p><a href="http://www.cis.syr.edu/~wedu/seed/Labs_12.04/Crypto/Crypto_Encryption">Secret Key Encryption Lab</a><!-- raw HTML omitted -->
+Exploring the secret-key encryption and its applications using OpenSSL.</p>
+</li>
+<li>
+<p><a href="http://www.cis.syr.edu/~wedu/seed/Labs_12.04/Crypto/Crypto_Hash">One-Way Hash Function Lab</a><!-- raw HTML omitted -->
+Exploring one-way hash function and its applications using OpenSSL.</p>
+</li>
+<li>
+<p><a href="http://www.cis.syr.edu/~wedu/seed/Labs_12.04/Crypto/Crypto_PublicKey">Public-Key Cryptography and PKI Lab</a><!-- raw HTML omitted -->
+Exploring public-key cryptography, digital signature, certificate, and PKI using OpenSSL.</p>
+</li>
+</ul>
+<h3 id="mobile-security-labs">Mobile Security Labs</h3>
+<p>These labs focus on the smartphone security, covering the most common vulnerabilities and attacks on mobile devices. An Android VM is provided for these labs.</p>
+<ul>
+<li>
+<p><a href="http://www.cis.syr.edu/~wedu/seed/Labs_Android5.1/Android_Repackaging">Android Repackaging Lab</a><!-- raw HTML omitted -->
+Insert malicious code inside an existing Android app, and repackage it.</p>
+</li>
+<li>
+<p><a href="http://www.cis.syr.edu/~wedu/seed/Labs_Android5.1/Android_Rooting">Android Device Rooting Lab</a><!-- raw HTML omitted -->
+Develop an OTA (Over-The-Air) package from scratch to root an Android device.</p>
+</li>
+</ul>
+<h2 id="pentester-lab">Pentester Lab</h2>
+<p>There is only one way to properly learn web penetration testing: by getting your hands dirty. We teach how to manually find and exploit vulnerabilities. You will understand the root cause of the problems and the methods that can be used to exploit them. Our exercises are based on common vulnerabilities found in different systems. The issues are not emulated. We provide you real systems with real vulnerabilities.</p>
+<ul>
+<li>
+<p><a href="https://pentesterlab.com/exercises/from_sqli_to_shell">From SQL Injection to Shell</a><!-- raw HTML omitted -->
+This exercise explains how you can, from a SQL injection, gain access to the administration console. Then in the administration console, how you can run commands on the system.</p>
+</li>
+<li>
+<p><a href="https://pentesterlab.com/exercises/from_sqli_to_shell_II">From SQL Injection to Shell II</a><!-- raw HTML omitted -->
+This exercise explains how you can, from a blind SQL injection, gain access to the administration console. Then in the administration console, how you can run commands on the system.</p>
+</li>
+<li>
+<p><a href="https://pentesterlab.com/exercises/from_sqli_to_shell_pg_edition">From SQL Injection to Shell: PostgreSQL edition</a><!-- raw HTML omitted -->
+This exercise explains how you can from a SQL injection gain access to the administration console. Then in the administration console, how you can run commands on the system.</p>
+</li>
+<li>
+<p><a href="https://pentesterlab.com/exercises/web_for_pentester">Web for Pentester</a><!-- raw HTML omitted -->
+This exercise is a set of the most common web vulnerabilities.</p>
+</li>
+<li>
+<p><a href="https://pentesterlab.com/exercises/web_for_pentester_II">Web for Pentester II</a><!-- raw HTML omitted -->
+This exercise is a set of the most common web vulnerabilities.</p>
+</li>
+<li>
+<p><a href="https://pentesterlab.com/exercises/php_include_and_post_exploitation">PHP Include And Post Exploitation</a><!-- raw HTML omitted -->
+This exercice describes the exploitation of a local file include with limited access. Once code execution is gained, you will see some post exploitation tricks.</p>
+</li>
+<li>
+<p><a href="https://pentesterlab.com/exercises/linux_host_review">Linux Host Review</a><!-- raw HTML omitted -->
+This exercice explains how to perform a Linux host review, what and how you can check the configuration of a Linux server to ensure it is securely configured. The reviewed system is a traditional Linux-Apache-Mysql-PHP (LAMP) server used to host a blog.</p>
+</li>
+<li>
+<p><a href="https://pentesterlab.com/exercises/ecb">Electronic Code Book</a><!-- raw HTML omitted -->
+This exercise explains how you can tamper with an encrypted cookies to access another user&rsquo;s account.</p>
+</li>
+<li>
+<p><a href="https://pentesterlab.com/exercises/rack_cookies_and_commands_injection">Rack Cookies and Commands injection</a><!-- raw HTML omitted -->
+After a short brute force introduction, this exercice explains the tampering of rack cookie and how you can even manage to modify a signed cookie (if the secret is trivial). Using this issue, you will be able to escalate your privileges and gain commands execution.</p>
+</li>
+<li>
+<p><a href="https://pentesterlab.com/exercises/padding_oracle">Padding Oracle</a><!-- raw HTML omitted -->
+This course details the exploitation of a weakness in the authentication of a PHP website. The website uses Cipher Block Chaining (CBC) to encrypt information provided by users and use this information to ensure authentication. The application also leaks if the padding is valid when decrypting the information. We will see how this behavior can impact the authentication and how it can be exploited.</p>
+</li>
+<li>
+<p><a href="https://pentesterlab.com/exercises/xss_and_mysql_file">XSS and MySQL FILE</a><!-- raw HTML omitted -->
+This exercise explains how you can use a Cross-Site Scripting vulnerability to get access to an administrator&rsquo;s cookies. Then how you can use his/her session to gain access to the administration to find a SQL injection and gain code execution using it.</p>
+</li>
+<li>
+<p><a href="https://pentesterlab.com/exercises/axis2_and_tomcat_manager">Axis2 Web service and Tomcat Manager</a><!-- raw HTML omitted -->
+This exercice explains the interactions between Tomcat and Apache, then it will show you how to call and attack an Axis2 Web service. Using information retrieved from this attack, you will be able to gain access to the Tomcat Manager and deploy a WebShell to gain commands execution.</p>
+</li>
+<li>
+<p><a href="https://pentesterlab.com/exercises/play_session_injection">Play Session Injection</a><!-- raw HTML omitted -->
+This exercise covers the exploitation of a session injection in the Play framework. This issue can be used to tamper with the content of the session while bypassing the signing mechanism.</p>
+</li>
+<li>
+<p><a href="https://pentesterlab.com/exercises/play_xxe">Play XML Entities</a><!-- raw HTML omitted -->
+This exercise covers the exploitation of a XML entities in the Play framework.</p>
+</li>
+<li>
+<p><a href="https://pentesterlab.com/exercises/cve-2007-1860">CVE-2007-1860: mod_jk double-decoding</a><!-- raw HTML omitted -->
+This exercise covers the exploitation of CVE-2007-1860. This vulnerability allows an attacker to gain access to unaccessible pages using crafted requests. This is a common trick that a lot of testers miss.</p>
+</li>
+<li>
+<p><a href="https://pentesterlab.com/exercises/cve-2008-1930">CVE-2008-1930: Wordpress 2.5 Cookie Integrity Protection Vulnerability</a><!-- raw HTML omitted -->
+This exercise explains how you can exploit CVE-2008-1930 to gain access to the administration interface of a Wordpress installation.</p>
+</li>
+<li>
+<p><a href="https://pentesterlab.com/exercises/cve-2012-1823">CVE-2012-1823: PHP CGI</a><!-- raw HTML omitted -->
+This exercise explains how you can exploit CVE-2012-1823 to retrieve the source code of an application and gain code execution.</p>
+</li>
+<li>
+<p><a href="https://pentesterlab.com/exercises/cve-2012-2661">CVE-2012-2661: ActiveRecord SQL injection</a><!-- raw HTML omitted -->
+This exercise explains how you can exploit CVE-2012-2661 to retrieve information from a database.</p>
+</li>
+<li>
+<p><a href="https://pentesterlab.com/exercises/cve-2012-6081">CVE-2012-6081: MoinMoin code execution</a><!-- raw HTML omitted -->
+This exercise explains how you can exploit CVE-2012-6081 to gain code execution. This vulnerability was exploited to compromise Debian&rsquo;s wiki and Python documentation website.</p>
+</li>
+<li>
+<p><a href="https://pentesterlab.com/exercises/cve-2014-6271">CVE-2014-6271/Shellshock</a><!-- raw HTML omitted -->
+This exercise covers the exploitation of a Bash vulnerability through a CGI.</p>
+</li>
+</ul>
+<h2 id="dr-thorsten-schneiders-binary-auditing">Dr. Thorsten Schneider&rsquo;s Binary Auditing</h2>
+<p>Learn the fundamentals of Binary Auditing. Know how HLL mapping works, get more inner file understanding than ever. Learn how to find and analyse software vulnerability. Dig inside Buffer Overflows and learn how exploits can be prevented. Start to analyse your first viruses and malware the safe way. Learn about simple tricks and how viruses look like using real life examples.</p>
+<ul>
+<li><a href="http://www.binary-auditing.com/">Binary Auditing</a></li>
+</ul>
+<h2 id="damn-vulnerable-web-application-dvwa">Damn Vulnerable Web Application (DVWA)</h2>
+<p>Damn Vulnerable Web Application (DVWA) is a PHP/MySQL web application that is damn vulnerable. Its main goal is to be an aid for security professionals to test their skills and tools in a legal environment, help web developers better understand the processes of securing web applications and to aid both students &amp; teachers to learn about web application security in a controlled class room environment.</p>
+<ul>
+<li><a href="https://github.com/ethicalhack3r/DVWA">Damn Vulnerable Web Application (DVWA)</a></li>
+</ul>
+<h2 id="damn-vulnerable-web-services">Damn Vulnerable Web Services</h2>
+<p>Damn Vulnerable Web Services is an insecure web application with multiple vulnerable web service components that can be used to learn real world web service vulnerabilities. The aim of this project is to help security professionals learn about Web Application Security through the use of a practical lab environment.</p>
+<ul>
+<li><a href="https://github.com/snoopysecurity/dvws">Damn Vulnerable Web Services</a></li>
+</ul>
+<h2 id="nowasp-mutillidae">NOWASP (Mutillidae)</h2>
+<p>OWASP Mutillidae II is a free, open source, deliberately vulnerable web-application providing a target for web-security enthusiest. With dozens of vulns and hints to help the user; this is an easy-to-use web hacking environment designed for labs, security enthusiast, classrooms, CTF, and vulnerability assessment tool targets. Mutillidae has been used in graduate security courses, corporate web sec training courses, and as an &ldquo;assess the assessor&rdquo; target for vulnerability assessment software.</p>
+<ul>
+<li><a href="http://sourceforge.net/projects/mutillidae/files/">OWASP Mutillidae</a></li>
+</ul>
+<h2 id="owasp-broken-web-applications-project">OWASP Broken Web Applications Project</h2>
+<p>Open Web Application Security Project (OWASP) Broken Web Applications Project, a collection of vulnerable web applications that is distributed on a Virtual Machine in VMware format compatible with their no-cost and commercial VMware products.</p>
+<ul>
+<li><a href="https://sourceforge.net/projects/owaspbwa/files/1.2/">OWASP Broken Web Applications Project</a></li>
+</ul>
+<h2 id="owasp-bricks">OWASP Bricks</h2>
+<p>Bricks is a web application security learning platform built on PHP and MySQL. The project focuses on variations of commonly seen application security issues. Each &lsquo;Brick&rsquo; has some sort of security issue which can be leveraged manually or using automated software tools. The mission is to &lsquo;Break the Bricks&rsquo; and thus learn the various aspects of web application security.</p>
+<ul>
+<li><a href="http://sechow.com/bricks/download.html">OWASP Bricks</a></li>
+</ul>
+<h2 id="owasp-hackademic-challenges-project">OWASP Hackademic Challenges Project</h2>
+<p>The Hackademic Challenges implement realistic scenarios with known vulnerabilities in a safe and controllable environment. Users can attempt to discover and exploit these vulnerabilities in order to learn important concepts of information security through an attacker&rsquo;s perspective.</p>
+<ul>
+<li><a href="https://github.com/Hackademic/hackademic/">OWASP Hackademic Challenges project</a></li>
+</ul>
+<h2 id="web-attack-and-exploitation-distro-waed">Web Attack and Exploitation Distro (WAED)</h2>
+<p>The Web Attack and Exploitation Distro (WAED) is a lightweight virtual machine based on Debian Distribution. WAED is pre-configured with various real-world vulnerable web applications in a sandboxed environment. It includes pentesting tools that aid in finding web application vulnerabilities. The main motivation behind this project is to provide a practical environment to learn about web application&rsquo;s vulnerabilities without the hassle of dealing with complex configurations. Currently, there are around 18 vulnerable applications installed in WAED.</p>
+<ul>
+<li><a href="http://www.waed.info/">Web Attack and Exploitation Distro (WAED)</a></li>
+</ul>
+<h2 id="xtreme-vulnerable-web-application-xvwa">Xtreme Vulnerable Web Application (XVWA)</h2>
+<p>XVWA is a badly coded web application written in PHP/MySQL that helps security enthusiasts to learn application security. It’s not advisable to host this application online as it is designed to be “Xtremely Vulnerable”. We recommend hosting this application in local/controlled environment and sharpening your application security ninja skills with any tools of your own choice. It’s totally legal to break or hack into this. The idea is to evangelize web application security to the community in possibly the easiest and fundamental way. Learn and acquire these skills for good purpose. How you use these skills and knowledge base is not our responsibility.</p>
+<ul>
+<li><a href="https://github.com/s4n7h0/xvwa">Xtreme Vulnerable Web Application (XVWA)</a></li>
+</ul>
+<h2 id="webgoat-a-deliberately-insecure-web-application">WebGoat: A deliberately insecure Web Application</h2>
+<p>WebGoat is a deliberately insecure web application maintained by OWASP designed to teach web application security lessons.</p>
+<ul>
+<li><a href="https://github.com/WebGoat/WebGoat">WebGoat</a></li>
+</ul>
+<h2 id="audi-1s-sqli-labs">Audi-1&rsquo;s SQLi-LABS</h2>
+<p>SQLi-LABS is a comprehensive test bed to Learn and understand nitti gritty of SQL injections and thereby helps professionals understand how to protect.</p>
+<ul>
+<li><a href="https://github.com/Audi-1/sqli-labs">SQLi-LABS</a></li>
+<li><a href="http://www.securitytube.net/user/Audi">SQLi-LABS Videos</a></li>
+</ul>
+<h1 id="capture-the-flag">Capture the Flag</h1>
+<h4 id="hack-the-box">Hack The Box</h4>
+<p>This pentester training platform/lab is full of machines (boxes) to hack on the different difficulty level. Majority of the content generated by the community and released on the website after the staff&rsquo;s approval. Besides boxes users also can pick static challenges or work on advanced tasks like Fortress or Endgame.</p>
+<ul>
+<li><a href="https://www.hackthebox.eu/">Hack The Box link</a></li>
+</ul>
+<h4 id="vulnhub">Vulnhub</h4>
+<p>We all learn in different ways: in a group, by yourself, reading books, watching/listening to other people, making notes or things out for yourself. Learning the basics &amp; understanding them is essential; this knowledge can be enforced by then putting it into practice.</p>
+<p>Over the years people have been creating these resources and a lot of time has been put into them, creating &lsquo;hidden gems&rsquo; of training material. However, unless you know of them, its hard to discover them.</p>
+<p>So VulnHub was born to cover as many as possible, creating a catalogue of &lsquo;stuff&rsquo; that is (legally) &lsquo;breakable, hackable &amp; exploitable&rsquo; - allowing you to learn in a safe environment and practice &lsquo;stuff&rsquo; out.
+When something is added to VulnHub&rsquo;s database it will be indexed as best as possible, to try and give you the best match possible for what you&rsquo;re wishing to learn or experiment with.</p>
+<ul>
+<li><a href="https://www.vulnhub.com/">Vulnhub Repository</a></li>
+</ul>
+<h4 id="ctf-write-ups">CTF Write Ups</h4>
+<ul>
+<li>
+<p><a href="https://ctfs.github.io/resources">CTF Resources</a><!-- raw HTML omitted -->
+A general collection of information, tools, and tips regarding CTFs and similar security competitions.</p>
+</li>
+<li>
+<p><a href="https://github.com/ctfs/write-ups-2016">CTF write-ups 2016</a><!-- raw HTML omitted -->
+Wiki-like CTF write-ups repository, maintained by the community. (2015)</p>
+</li>
+<li>
+<p><a href="https://github.com/ctfs/write-ups-2015">CTF write-ups 2015</a><!-- raw HTML omitted -->
+Wiki-like CTF write-ups repository, maintained by the community. (2015)</p>
+</li>
+<li>
+<p><a href="https://github.com/ctfs/write-ups-2014">CTF write-ups 2014</a><!-- raw HTML omitted -->
+Wiki-like CTF write-ups repository, maintained by the community. (2014)</p>
+</li>
+<li>
+<p><a href="https://github.com/ctfs/write-ups-2013">CTF write-ups 2013</a><!-- raw HTML omitted -->
+Wiki-like CTF write-ups repository, maintained by the community. (2013)</p>
+</li>
+</ul>
+<h3 id="ctf-repos">CTF Repos</h3>
+<ul>
+<li>
+<p><a href="http://captf.com">captf</a><!-- raw HTML omitted -->
+This site is primarily the work of psifertex since he needed a dump site for a variety of CTF material and since many other public sites documenting the art and sport of Hacking Capture the Flag events have come and gone over the years.</p>
+</li>
+<li>
+<p><a href="http://shell-storm.org/repo/CTF">shell-storm</a><!-- raw HTML omitted -->
+The Jonathan Salwan&rsquo;s little corner.</p>
+</li>
+</ul>
+<h3 id="ctf-courses">CTF Courses</h3>
+<ul>
+<li><a href="https://hoppersroppers.github.io/courseCTF.html">Roppers CTF Course</a><!-- raw HTML omitted -->
+Free course designed to teach the fundamentals of Forensics, Cryptography, and Web-Exploitation required to be successful in Capture the Flag competitions. At the end of the course, students compete in the picoCTF event with guidance from instructors. Full text available as a <a href="https://www.hoppersroppers.org/ctf/">gitbook</a>.</li>
+</ul>
+<h1 id="securitytube-playlists">SecurityTube Playlists</h1>
+<p>Security Tube hosts a large range of video tutorials on IT security including penetration testing , exploit development and reverse engineering.</p>
+<ul>
+<li>
+<p><a href="http://www.securitytube.net/groups?operation=view&amp;groupId=10">SecurityTube Metasploit Framework Expert (SMFE)</a><!-- raw HTML omitted -->
+This video series covers basics of Metasploit Framework. We will look at why to use metasploit then go on to how to exploit vulnerbilities with help of metasploit and post exploitation techniques with meterpreter.</p>
+</li>
+<li>
+<p><a href="http://www.securitytube.net/groups?operation=view&amp;groupId=9">Wireless LAN Security and Penetration Testing Megaprimer</a><!-- raw HTML omitted -->
+This video series will take you through a journey in wireless LAN (in)security and penetration testing. We will start from the very basics of how WLANs work, graduate to packet sniffing and injection attacks, move on to audit infrastructure vulnerabilities, learn to break into WLAN clients and finally look at advanced hybrid attacks involving wireless and applications.</p>
+</li>
+<li>
+<p><a href="http://www.securitytube.net/groups?operation=view&amp;groupId=7">Exploit Research Megaprimer</a><!-- raw HTML omitted -->
+In this video series, we will learn how to program exploits for various vulnerabilities published online. We will also look at how to use various tools and techniques to find Zero Day vulnerabilities in both open and closed source software.</p>
+</li>
+<li>
+<p><a href="http://www.securitytube.net/groups?operation=view&amp;groupId=4">Buffer Overflow Exploitation Megaprimer for Linux</a><!-- raw HTML omitted -->
+In this video series, we will understand the basic of buffer overflows and understand how to exploit them on linux based systems. In later videos, we will also look at how to apply the same principles to Windows and other selected operating systems.</p>
+</li>
+</ul>
+<h1 id="open-security-books">Open Security Books</h1>
+<h4 id="crypto-101---lvh">Crypto 101 - lvh</h4>
+<p>Comes with everything you need to understand complete systems such as SSL/TLS: block ciphers, stream ciphers, hash functions, message authentication codes, public key encryption, key agreement protocols, and signature algorithms.  Learn how to exploit common cryptographic flaws, armed with nothing but a little time and your favorite programming language. Forge administrator cookies, recover passwords, and even backdoor your own random number generator.</p>
+<ul>
+<li><a href="https://www.crypto101.io/">Crypto101</a></li>
+<li><a href="https://github.com/crypto101/book">LaTeX Source</a></li>
+</ul>
+<h4 id="a-graduate-course-in-applied-cryptography---dan-boneh--victor-shoup">A Graduate Course in Applied Cryptography - Dan Boneh &amp; Victor Shoup</h4>
+<p>This book is about constructing practical cruptosystems for which we can argue security under plausible assumptions. The book covers many constructions for different tasks in cryptography. For each task we define the required goal. To analyze the constructions, we develop a unified framework for doing cryptographic proofs. A reader who masters this framework will capable of applying it to new constructions that may not be covered in this book. We describe common mistakes to avoid as well as attacks on real-world systems that illustratre the importance of rigor in cryptography. We end every chapter with a fund application that applies the ideas in the chapter in some unexpected way.</p>
+<ul>
+<li><a href="https://crypto.stanford.edu/~dabo/cryptobook/">A Graduate Course in Applied Cryptography</a></li>
+</ul>
+<h4 id="security-engineering-a-guide-to-building-dependable-distributed-systems---ross-anderson">Security Engineering, A Guide to Building Dependable Distributed Systems - Ross Anderson</h4>
+<p>The world has changed radically since the first edition of this book was published in 2001. Spammers, virus writers, phishermen, money launderers, and spies now trade busily with each other in a lively online criminal economy and as they specialize, they get better. In this indispensable, fully updated guide, Ross Anderson reveals how to build systems that stay dependable whether faced with error or malice. Here?s straight talk on critical topics such as technical engineering basics, types of attack, specialized protection mechanisms, security psychology, policy, and more.</p>
+<ul>
+<li><a href="https://www.cl.cam.ac.uk/~rja14/book.html">Security Engineering, Second Edition</a></li>
+</ul>
+<h4 id="reverse-engineering-for-beginners---dennis-yurichev">Reverse Engineering for Beginners - Dennis Yurichev</h4>
+<p>This book offers a primer on reverse-engineering, delving into disassembly code-level reverse engineering and explaining how to decipher assembly language for those beginners who would like to learn to understand x86 (which accounts for almost all executable software in the world) and ARM code created by C/C++ compilers.</p>
+<ul>
+<li><a href="http://beginners.re/">Reverse Engineering for Beginners</a></li>
+<li><a href="https://github.com/dennis714/RE-for-beginners">LaTeX Source</a></li>
+</ul>
+<h4 id="ctf-field-guide---trail-of-bits">CTF Field Guide - Trail of Bits</h4>
+<p>The focus areas that CTF competitions tend to measure are vulnerability discovery, exploit creation, toolkit creation, and operational tradecraft.. Whether you want to succeed at CTF, or as a computer security professional, you&rsquo;ll need to become an expert in at least one of these disciplines. Ideally in all of them.</p>
+<ul>
+<li><a href="https://trailofbits.github.io/ctf/">CTF Field Guide</a></li>
+<li><a href="https://github.com/trailofbits/ctf">Markdown Source</a></li>
+</ul>
+<h1 id="challenges">Challenges</h1>
+<ul>
+<li>
+<p><a href="https://challenges.re/">Reverse Engineering Challenges</a></p>
+</li>
+<li>
+<p><a href="http://pwnable.kr">Pwnable.kr</a> is a non-commercial wargame site which provides various pwn challenges regarding system exploitation.</p>
+</li>
+<li>
+<p><a href="http://cryptopals.com/">Matasano Crypto Challenges</a> (a.k.a. Cryptopals) is a collection of exercises that demonstrate attacks on real-world crypto by letting you implement and break the cryptoschemes yourself.</p>
+</li>
+</ul>
+<h1 id="documentation">Documentation</h1>
+<h4 id="owasp---open-web-application-security-project">OWASP - Open Web Application Security Project</h4>
+<p>The Open Web Application Security Project (OWASP) is a 501(c)(3) worldwide not-for-profit charitable organization focused on improving the security of software. Our mission is to make software security visible, so that individuals and organizations worldwide can make informed decisions about true software security risks.</p>
+<ul>
+<li><a href="https://www.owasp.org/index.php/Main_Page">Open Web Application Security Project</a></li>
+</ul>
+<h4 id="applied-crypto-hardening---bettercryptoorg">Applied Crypto Hardening - bettercrypto.org</h4>
+<p>This guide arose out of the need for system administrators to have an updated, solid, well re-searched and thought-through guide for configuring SSL, PGP,SSH and other cryptographic tools in the post-Snowdenage. Triggered by the NSA leaks in the summer of 2013, many system administrators and IT security officers saw the need to strengthen their encryption settings.This guide is specifically written for these system administrators.</p>
+<ul>
+<li><a href="https://bettercrypto.org/static/applied-crypto-hardening.pdf">Applied Crypto Hardening</a></li>
+<li><a href="https://github.com/BetterCrypto/Applied-Crypto-Hardening">LaTeX Source</a></li>
+</ul>
+<h4 id="ptes---penetration-testing-execution-standard">PTES - Penetration Testing Execution Standard</h4>
+<p>The penetration testing execution standard cover everything related to a penetration test - from the initial communication and reasoning behind a pentest, through the intelligence gathering and threat modeling phases where testers are working behind the scenes in order to get a better understanding of the tested organization, through vulnerability research, exploitation and post exploitation, where the technical security expertise of the testers come to play and combine with the business understanding of the engagement, and finally to the reporting, which captures the entire process, in a manner that makes sense to the customer and provides the most value to it.</p>
+<ul>
+<li><a href="http://www.pentest-standard.org/index.php/Main_Page">Penetration Testing Execution Standard</a></li>
+</ul>
+
+			</div>
+		</article>
+	</main>
+<aside>
+	<div>
+		<div>
+			<h3>LATEST POSTS</h3>
+		</div>
+		<div>
+			<ul>
+				
+			</ul>
+		</div>
+	</div>
+</aside>
+
+
+	<footer>
+	<p>&copy; 2024 <a href="https://0sint.ir/"><b>Alireza Gharib. All right reserved</b></a>.
+	<a href="https://github.com/Gharib110"><b>Github</b></a>.
+	</p>
+</footer>
+
+</body>
+</html>

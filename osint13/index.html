@@ -1,0 +1,992 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<style type=text/css>body{font-family:monospace;}</style>
+	<title>Penetration Testing Tools</title>
+	
+	
+	<link rel="stylesheet" href="/css/style.css">
+	
+	
+</head>
+<body>
+	<header>
+	==================<br>
+	== <a href="https://0sint.ir/">Osint Topics</a> ==<br>
+	==================
+	<div style="float: right;">OSINT Topics</div><br>
+	<p>
+	<nav>
+			<a href="/"><b>Start</b></a>.
+			
+			
+			<a href="/posts/"><b>Posts</b></a>.
+			
+			<a href="/categories/"><b>Categories</b></a>.
+			
+			<a href="/tags/"><b>Tags</b></a>.
+			
+	</nav>
+	</p>
+	
+</header>
+
+	
+	<main>
+		<article>
+			<h1>Penetration Testing Tools</h1>
+			<b><time>27.07.2024 00:00</time></b>
+		       
+
+			<div>
+				<h1 id="penetration-testing">Penetration Testing</h1>
+<p>A collection of penetration testing and offensive cybersecurity resources.
+<a href="https://en.wikipedia.org/wiki/Penetration_test">Penetration testing</a> is the practice of launching authorized, simulated attacks against computer systems and their physical infrastructure to expose potential security weaknesses and vulnerabilities. Should you discover a vulnerability, please follow <a href="https://kb.cert.org/vuls/guidance/">this guidance</a> to report it responsibly.</p>
+<h2 id="contents">Contents</h2>
+<ul>
+<li><a href="#android-utilities">Android Utilities</a></li>
+<li><a href="#anonymity-tools">Anonymity Tools</a>
+<ul>
+<li><a href="#tor-tools">Tor Tools</a></li>
+</ul>
+</li>
+<li><a href="#anti-virus-evasion-tools">Anti-virus Evasion Tools</a></li>
+<li><a href="#books">Books</a>
+<ul>
+<li><a href="#malware-analysis-books">Malware Analysis Books</a></li>
+</ul>
+</li>
+<li><a href="#ctf-tools">CTF Tools</a></li>
+<li><a href="#cloud-platform-attack-tools">Cloud Platform Attack Tools</a></li>
+<li><a href="#collaboration-tools">Collaboration Tools</a></li>
+<li><a href="#conferences-and-events">Conferences and Events</a>
+<ul>
+<li><a href="#asia">Asia</a></li>
+<li><a href="#europe">Europe</a></li>
+<li><a href="#north-america">North America</a></li>
+<li><a href="#south-america">South America</a></li>
+<li><a href="#zealandia">Zealandia</a></li>
+</ul>
+</li>
+<li><a href="#exfiltration-tools">Exfiltration Tools</a></li>
+<li><a href="#exploit-development-tools">Exploit Development Tools</a></li>
+<li><a href="#file-format-analysis-tools">File Format Analysis Tools</a></li>
+<li><a href="#gnulinux-utilities">GNU/Linux Utilities</a></li>
+<li><a href="#hash-cracking-tools">Hash Cracking Tools</a></li>
+<li><a href="#hex-editors">Hex Editors</a></li>
+<li><a href="#industrial-control-and-scada-systems">Industrial Control and SCADA Systems</a></li>
+<li><a href="#intentionally-vulnerable-systems">Intentionally Vulnerable Systems</a>
+<ul>
+<li><a href="#intentionally-vulnerable-systems-as-docker-containers">Intentionally Vulnerable Systems as Docker Containers</a></li>
+</ul>
+</li>
+<li><a href="#lock-picking">Lock Picking</a></li>
+<li><a href="#macos-utilities">macOS Utilities</a></li>
+<li><a href="#multi-paradigm-frameworks">Multi-paradigm Frameworks</a></li>
+<li><a href="#network-tools">Network Tools</a>
+<ul>
+<li><a href="#ddos-tools">DDoS Tools</a></li>
+<li><a href="#network-reconnaissance-tools">Network Reconnaissance Tools</a></li>
+<li><a href="#protocol-analyzers-and-sniffers">Protocol Analyzers and Sniffers</a></li>
+<li><a href="#network-traffic-replay-and-editing-tools">Network Traffic Replay and Editing Tools</a></li>
+<li><a href="#proxies-and-machine-in-the-middle-mitm-tools">Proxies and Machine-in-the-Middle (MITM) Tools</a></li>
+<li><a href="#transport-layer-security-tools">Transport Layer Security Tools</a></li>
+<li><a href="#wireless-network-tools">Wireless Network Tools</a></li>
+</ul>
+</li>
+<li><a href="#network-vulnerability-scanners">Network Vulnerability Scanners</a>
+<ul>
+<li><a href="#web-vulnerability-scanners">Web Vulnerability Scanners</a></li>
+</ul>
+</li>
+<li><a href="#open-sources-intelligence-osint">Open Sources Intelligence (OSINT)</a>
+<ul>
+<li><a href="#data-broker-and-search-engine-services">Data broker and search engine services</a></li>
+<li><a href="#dorking-tools">Dorking tools</a></li>
+<li><a href="#email-search-and-analysis-tools">Email search and analysis tools</a></li>
+<li><a href="#metadata-harvesting-and-analysis">Metadata harvesting and analysis</a></li>
+<li><a href="#network-device-discovery-tools">Network device discovery tools</a></li>
+<li><a href="#osint-online-resources">OSINT Online Resources</a></li>
+<li><a href="#source-code-repository-searching-tools">Source code repository searching tools</a></li>
+<li><a href="#web-application-and-resource-analysis-tools">Web application and resource analysis tools</a></li>
+</ul>
+</li>
+<li><a href="#online-resources">Online Resources</a>
+<ul>
+<li><a href="#online-code-samples-and-examples">Online Code Samples and Examples</a></li>
+<li><a href="#online-exploit-development-resources">Online Exploit Development Resources</a></li>
+<li><a href="#online-lock-picking-resources">Online Lock Picking Resources</a></li>
+<li><a href="#online-operating-systems-resources">Online Operating Systems Resources</a></li>
+<li><a href="#online-penetration-testing-resources">Online Penetration Testing Resources</a></li>
+<li><a href="#other-lists-online">Other Lists Online</a></li>
+<li><a href="#penetration-testing-report-templates">Penetration Testing Report Templates</a></li>
+</ul>
+</li>
+<li><a href="#operating-system-distributions">Operating System Distributions</a></li>
+<li><a href="#periodicals">Periodicals</a></li>
+<li><a href="#physical-access-tools">Physical Access Tools</a></li>
+<li><a href="#privilege-escalation-tools">Privilege Escalation Tools</a>
+<ul>
+<li><a href="#password-spraying-tools">Password Spraying Tools</a></li>
+</ul>
+</li>
+<li><a href="#reverse-engineering">Reverse Engineering</a>
+<ul>
+<li><a href="#reverse-engineering-books">Reverse Engineering Books</a></li>
+<li><a href="#reverse-engineering-tools">Reverse Engineering Tools</a></li>
+</ul>
+</li>
+<li><a href="#security-education-courses">Security Education Courses</a></li>
+<li><a href="#exploit-development-online-resources">Shellcoding Guides and Tutorials</a></li>
+<li><a href="#side-channel-tools">Side-channel Tools</a></li>
+<li><a href="#social-engineering">Social Engineering</a>
+<ul>
+<li><a href="#social-engineering-books">Social Engineering Books</a></li>
+<li><a href="#social-engineering-online-resources">Social Engineering Online Resources</a></li>
+<li><a href="#social-engineering-tools">Social Engineering Tools</a></li>
+</ul>
+</li>
+<li><a href="#static-analyzers">Static Analyzers</a></li>
+<li><a href="#steganography-tools">Steganography Tools</a></li>
+<li><a href="#vulnerability-databases">Vulnerability Databases</a></li>
+<li><a href="#web-exploitation">Web Exploitation</a>
+<ul>
+<li><a href="#intercepting-web-proxies">Intercepting Web proxies</a></li>
+<li><a href="#web-file-inclusion-tools">Web file inclusion tools</a></li>
+<li><a href="#web-injection-tools">Web injection tools</a></li>
+<li><a href="#web-path-discovery-and-bruteforcing-tools">Web path discovery and bruteforcing tools</a></li>
+<li><a href="#web-shells-and-c2-frameworks">Web shells and C2 frameworks</a></li>
+<li><a href="#web-accessible-source-code-ripping-tools">Web-accessible source code ripping tools</a></li>
+<li><a href="#web-exploitation-books">Web Exploitation Books</a></li>
+</ul>
+</li>
+<li><a href="#windows-utilities">Windows Utilities</a></li>
+</ul>
+<h2 id="android-utilities">Android Utilities</h2>
+<ul>
+<li><a href="https://www.csploit.org/">cSploit</a> - Advanced IT security professional toolkit on Android featuring an integrated Metasploit daemon and MITM capabilities.</li>
+<li><a href="https://www.fing.com/products/fing-app/">Fing</a> - Network scanning and host enumeration app that performs NetBIOS, UPnP, Bonjour, SNMP, and various other advanced device fingerprinting techniques.</li>
+</ul>
+<h2 id="anonymity-tools">Anonymity Tools</h2>
+<ul>
+<li><a href="https://geti2p.net/">I2P</a> - The Invisible Internet Project.</li>
+<li><a href="https://0xacab.org/jvoisin/mat2">Metadata Anonymization Toolkit (MAT)</a> - Metadata removal tool, supporting a wide range of commonly used file formats, written in Python3.</li>
+<li><a href="http://webkay.robinlinus.com/">What Every Browser Knows About You</a> - Comprehensive detection page to test your own Web browser&rsquo;s configuration for privacy and identity leaks.</li>
+</ul>
+<h3 id="tor-tools">Tor Tools</h3>
+<p>See also <a href="https://github.com/ajvb/awesome-tor">awesome-tor</a>.</p>
+<ul>
+<li><a href="https://github.com/GouveaHeitor/nipe">Nipe</a> - Script to redirect all traffic from the machine to the Tor network.</li>
+<li><a href="https://onionscan.org/">OnionScan</a> - Tool for investigating the Dark Web by finding operational security issues introduced by Tor hidden service operators.</li>
+<li><a href="https://tails.boum.org/">Tails</a> - Live operating system aiming to preserve your privacy and anonymity.</li>
+<li><a href="https://www.torproject.org/">Tor</a> - Free software and onion routed overlay network that helps you defend against traffic analysis.</li>
+<li><a href="https://github.com/skizap/dos-over-tor">dos-over-tor</a> - Proof of concept denial of service over Tor stress test tool.</li>
+<li><a href="https://github.com/brainfuckSec/kalitorify">kalitorify</a> - Transparent proxy through Tor for Kali Linux OS.</li>
+</ul>
+<h2 id="anti-virus-evasion-tools">Anti-virus Evasion Tools</h2>
+<ul>
+<li><a href="https://github.com/govolution/avet">AntiVirus Evasion Tool (AVET)</a> - Post-process exploits containing executable files targeted for Windows machines to avoid being recognized by antivirus software.</li>
+<li><a href="https://github.com/paranoidninja/CarbonCopy">CarbonCopy</a> - Tool that creates a spoofed certificate of any online website and signs an Executable for AV evasion.</li>
+<li><a href="http://nullsecurity.net/tools/binary.html">Hyperion</a> - Runtime encryptor for 32-bit portable executables (&ldquo;PE <code>.exe</code>s&rdquo;).</li>
+<li><a href="https://www.shellterproject.com/">Shellter</a> - Dynamic shellcode injection tool, and the first truly dynamic PE infector ever created.</li>
+<li><a href="https://github.com/Mr-Un1k0d3r/UniByAv">UniByAv</a> - Simple obfuscator that takes raw shellcode and generates Anti-Virus friendly executables by using a brute-forcable, 32-bit XOR key.</li>
+<li><a href="https://www.veil-framework.com/">Veil</a> - Generate metasploit payloads that bypass common anti-virus solutions.</li>
+<li><a href="https://github.com/v-p-b/peCloakCapstone">peCloakCapstone</a> - Multi-platform fork of the peCloak.py automated malware antivirus evasion tool.</li>
+</ul>
+<h2 id="books">Books</h2>
+<p>See also <a href="https://www.defcon.org/html/links/book-list.html">DEF CON Suggested Reading</a>.</p>
+<ul>
+<li><a href="https://www.amazon.com/Advanced-Penetration-Testing-Hacking-Networks/dp/1119367689/">Advanced Penetration Testing by Wil Allsopp, 2017</a></li>
+<li><a href="http://www.packtpub.com/networking-and-servers/advanced-penetration-testing-highly-secured-environments-ultimate-security-gu">Advanced Penetration Testing for Highly-Secured Environments by Lee Allen, 2012</a></li>
+<li><a href="http://www.amazon.com/Advanced-Persistent-Threat-Hacking-Organization/dp/0071828362">Advanced Persistent Threat Hacking: The Art and Science of Hacking Any Organization by Tyler Wrightson, 2014</a></li>
+<li><a href="http://www.wiley.com/WileyCDA/WileyTitle/productCd-111860864X.html">Android Hacker&rsquo;s Handbook by Joshua J. Drake et al., 2014</a></li>
+<li><a href="https://www.amazon.de/Blue-Team-Field-Manual-BTFM/dp/154101636X">BTFM: Blue Team Field Manual by Alan J White &amp; Ben Clark, 2017</a></li>
+<li><a href="http://www.amazon.com/Black-Hat-Python-Programming-Pentesters/dp/1593275900">Black Hat Python: Python Programming for Hackers and Pentesters by Justin Seitz, 2014</a></li>
+<li><a href="https://nostarch.com/bughunter">Bug Hunter&rsquo;s Diary by Tobias Klein, 2011</a></li>
+<li><a href="https://nostarch.com/carhacking">Car Hacker&rsquo;s Handbook by Craig Smith, 2016</a></li>
+<li><a href="https://www.manning.com/books/effective-software-testing">Effective Software Testing, 2021</a></li>
+<li><a href="http://www.fuzzing.org/">Fuzzing: Brute Force Vulnerability Discovery by Michael Sutton et al., 2007</a></li>
+<li><a href="https://nostarch.com/metasploit">Metasploit: The Penetration Tester&rsquo;s Guide by David Kennedy et al., 2011</a></li>
+<li><a href="https://nostarch.com/pentesting">Penetration Testing: A Hands-On Introduction to Hacking by Georgia Weidman, 2014</a></li>
+<li><a href="http://www.amazon.com/Penetration-Testing-Procedures-Methodologies-EC-Council/dp/1435483677">Penetration Testing: Procedures &amp; Methodologies by EC-Council, 2010</a></li>
+<li><a href="https://www.elsevier.com/books/professional-penetration-testing/wilhelm/978-1-59749-993-4">Professional Penetration Testing by Thomas Wilhelm, 2013</a></li>
+<li><a href="http://www.amazon.com/Rtfm-Red-Team-Field-Manual/dp/1494295504/">RTFM: Red Team Field Manual by Ben Clark, 2014</a></li>
+<li><a href="https://nostarch.com/hacking2.htm">The Art of Exploitation by Jon Erickson, 2008</a></li>
+<li><a href="https://www.manning.com/books/the-art-of-network-penetration-testing">The Art of Network Penetration Testing, 2020</a></li>
+<li><a href="https://www.elsevier.com/books/the-basics-of-hacking-and-penetration-testing/engebretson/978-1-59749-655-1">The Basics of Hacking and Penetration Testing by Patrick Engebretson, 2013</a></li>
+<li><a href="http://www.wiley.com/WileyCDA/WileyTitle/productCd-0764578014.html">The Database Hacker&rsquo;s Handbook, David Litchfield et al., 2005</a></li>
+<li><a href="http://www.amazon.com/The-Hacker-Playbook-Practical-Penetration/dp/1494932636/">The Hacker Playbook by Peter Kim, 2014</a></li>
+<li><a href="http://www.wiley.com/WileyCDA/WileyTitle/productCd-0470395362.html">The Mac Hacker&rsquo;s Handbook by Charlie Miller &amp; Dino Dai Zovi, 2009</a></li>
+<li><a href="http://www.wiley.com/WileyCDA/WileyTitle/productCd-1118958500.html">The Mobile Application Hacker&rsquo;s Handbook by Dominic Chell et al., 2015</a></li>
+<li><a href="http://www.amazon.com/Unauthorised-Access-Physical-Penetration-Security-ebook/dp/B005DIAPKE">Unauthorised Access: Physical Penetration Testing For IT Security Teams by Wil Allsopp, 2010</a></li>
+<li><a href="https://www.elsevier.com/books/violent-python/unknown/978-1-59749-957-6">Violent Python by TJ O&rsquo;Connor, 2012</a></li>
+<li><a href="http://www.wiley.com/WileyCDA/WileyTitle/productCd-1118204123.html">iOS Hacker&rsquo;s Handbook by Charlie Miller et al., 2012</a></li>
+</ul>
+<h3 id="malware-analysis-books">Malware Analysis Books</h3>
+<p>See <a href="https://github.com/rshipp/awesome-malware-analysis#books">awesome-malware-analysis § Books</a>.</p>
+<h2 id="ctf-tools">CTF Tools</h2>
+<ul>
+<li><a href="https://trailofbits.github.io/ctf/">CTF Field Guide</a> - Everything you need to win your next CTF competition.</li>
+<li><a href="https://github.com/ciphey/ciphey">Ciphey</a> - Automated decryption tool using artificial intelligence and natural language processing.</li>
+<li><a href="https://github.com/Ganapati/RsaCtfTool">RsaCtfTool</a> - Decrypt data enciphered using weak RSA keys, and recover private keys from public keys using a variety of automated attacks.</li>
+<li><a href="https://github.com/zardus/ctf-tools">ctf-tools</a> - Collection of setup scripts to install various security research tools easily and quickly deployable to new machines.</li>
+<li><a href="https://github.com/0x00-0x00/shellpop">shellpop</a> - Easily generate sophisticated reverse or bind shell commands to help you save time during penetration tests.</li>
+</ul>
+<h2 id="cloud-platform-attack-tools">Cloud Platform Attack Tools</h2>
+<p>See also <em><a href="https://hackingthe.cloud/">HackingThe.cloud</a></em>.</p>
+<ul>
+<li><a href="https://rhinosecuritylabs.com/aws/cloud-container-attack-tool/">Cloud Container Attack Tool (CCAT)</a> - Tool for testing security of container environments.</li>
+<li><a href="https://github.com/belane/CloudHunter">CloudHunter</a> - Looks for AWS, Azure and Google cloud storage buckets and lists permissions for vulnerable buckets.</li>
+<li><a href="https://cloudsplaining.readthedocs.io/">Cloudsplaining</a> - Identifies violations of least privilege in AWS IAM policies and generates a pretty HTML report with a triage worksheet.</li>
+<li><a href="https://endgame.readthedocs.io/">Endgame</a> - AWS Pentesting tool that lets you use one-liner commands to backdoor an AWS account&rsquo;s resources with a rogue AWS account.</li>
+<li><a href="https://github.com/RhinoSecurityLabs/GCPBucketBrute">GCPBucketBrute</a> - Script to enumerate Google Storage buckets, determine what access you have to them, and determine if they can be privilege escalated.</li>
+</ul>
+<h2 id="collaboration-tools">Collaboration Tools</h2>
+<ul>
+<li><a href="https://dradis.com/">Dradis</a> - Open-source reporting and collaboration tool for IT security professionals.</li>
+<li><a href="https://hexway.io/hive/">Hexway Hive</a> - Commercial collaboration, data aggregation, and reporting framework for red teams with a limited free self-hostable option.</li>
+<li><a href="https://github.com/lair-framework/lair/wiki">Lair</a> - Reactive attack collaboration framework and web application built with meteor.</li>
+<li><a href="https://gitlab.com/invuls/pentest-projects/pcf">Pentest Collaboration Framework (PCF)</a> - Open source, cross-platform, and portable toolkit for automating routine pentest processes with a team.</li>
+<li><a href="https://reconmap.com/">Reconmap</a> - Open-source collaboration platform for InfoSec professionals that streamlines the pentest process.</li>
+<li><a href="https://github.com/outflanknl/RedELK">RedELK</a> - Track and alarm about Blue Team activities while providing better usability in long term offensive operations.</li>
+</ul>
+<h2 id="conferences-and-events">Conferences and Events</h2>
+<ul>
+<li><a href="http://www.securitybsides.com/">BSides</a> - Framework for organising and holding security conferences.</li>
+<li><a href="https://ctftime.org/">CTFTime.org</a> - Directory of upcoming and archive of past Capture The Flag (CTF) competitions with links to challenge writeups.</li>
+</ul>
+<h3 id="asia">Asia</h3>
+<ul>
+<li><a href="https://conference.hitb.org/">HITB</a> - Deep-knowledge security conference held in Malaysia and The Netherlands.</li>
+<li><a href="https://hitcon.org/">HITCON</a> - Hacks In Taiwan Conference held in Taiwan.</li>
+<li><a href="http://nullcon.net/website/">Nullcon</a> - Annual conference in Delhi and Goa, India.</li>
+<li><a href="http://secuinside.com">SECUINSIDE</a> - Security Conference in Seoul.</li>
+</ul>
+<h3 id="europe">Europe</h3>
+<ul>
+<li><a href="https://44con.com/">44Con</a> - Annual Security Conference held in London.</li>
+<li><a href="https://www.balccon.org">BalCCon</a> - Balkan Computer Congress, annually held in Novi Sad, Serbia.</li>
+<li><a href="http://brucon.org">BruCON</a> - Annual security conference in Belgium.</li>
+<li><a href="https://events.ccc.de/congress/">CCC</a> - Annual meeting of the international hacker scene in Germany.</li>
+<li><a href="https://deepsec.net/">DeepSec</a> - Security Conference in Vienna, Austria.</li>
+<li><a href="http://def.camp/">DefCamp</a> - Largest Security Conference in Eastern Europe, held annually in Bucharest, Romania.</li>
+<li><a href="http://fsec.foi.hr">FSec</a> - FSec - Croatian Information Security Gathering in Varaždin, Croatia.</li>
+<li><a href="https://hack.lu/">Hack.lu</a> - Annual conference held in Luxembourg.</li>
+<li><a href="http://www.infosecurityeurope.com/">Infosecurity Europe</a> - Europe&rsquo;s number one information security event, held in London, UK.</li>
+<li><a href="https://www.steelcon.info/">SteelCon</a> - Security conference in Sheffield UK.</li>
+<li><a href="https://www.swisscyberstorm.com/">Swiss Cyber Storm</a> - Annual security conference in Lucerne, Switzerland.</li>
+<li><a href="https://www.troopers.de">Troopers</a> - Annual international IT Security event with workshops held in Heidelberg, Germany.</li>
+<li><a href="https://honeycon.eu/">HoneyCON</a> - Annual Security Conference in Guadalajara, Spain. Organized by the HoneySEC association.</li>
+</ul>
+<h3 id="north-america">North America</h3>
+<ul>
+<li><a href="https://appsecusa.org/">AppSecUSA</a> - Annual conference organized by OWASP.</li>
+<li><a href="http://www.blackhat.com/">Black Hat</a> - Annual security conference in Las Vegas.</li>
+<li><a href="https://carolinacon.org/">CarolinaCon</a> - Infosec conference, held annually in North Carolina.</li>
+<li><a href="https://www.defcon.org/">DEF CON</a> - Annual hacker convention in Las Vegas.</li>
+<li><a href="https://www.derbycon.com/">DerbyCon</a> - Annual hacker conference based in Louisville.</li>
+<li><a href="https://hnd.techlearningcollective.com/">Hackers Next Door</a> - Cybersecurity and social technology conference held in New York City.</li>
+<li><a href="https://hope.net/">Hackers On Planet Earth (HOPE)</a> - Semi-annual conference held in New York City.</li>
+<li><a href="https://hackfest.ca">Hackfest</a> - Largest hacking conference in Canada.</li>
+<li><a href="http://www.layerone.org/">LayerOne</a> - Annual US security conference held every spring in Los Angeles.</li>
+<li><a href="https://www.nationalcybersummit.com/">National Cyber Summit</a> - Annual US security conference and Capture the Flag event, held in Huntsville, Alabama, USA.</li>
+<li><a href="http://phreaknic.info/">PhreakNIC</a> - Technology conference held annually in middle Tennessee.</li>
+<li><a href="https://www.rsaconference.com/">RSA Conference USA</a> - Annual security conference in San Francisco, California, USA.</li>
+<li><a href="http://shmoocon.org/">ShmooCon</a> - Annual US East coast hacker convention.</li>
+<li><a href="http://www.skydogcon.com/">SkyDogCon</a> - Technology conference in Nashville.</li>
+<li><a href="https://www.summercon.org/">SummerCon</a> - One of the oldest hacker conventions in America, held during Summer.</li>
+<li><a href="http://thotcon.org/">ThotCon</a> - Annual US hacker conference held in Chicago.</li>
+<li><a href="https://www.virusbulletin.com/conference/index">Virus Bulletin Conference</a> - Annual conference going to be held in Denver, USA for 2016.</li>
+</ul>
+<h3 id="south-america">South America</h3>
+<ul>
+<li><a href="http://www.ekoparty.org">Ekoparty</a> - Largest Security Conference in Latin America, held annually in Buenos Aires, Argentina.</li>
+<li><a href="https://www.h2hc.com.br/">Hackers to Hackers Conference (H2HC)</a> - Oldest security research (hacking) conference in Latin America and one of the oldest ones still active in the world.</li>
+</ul>
+<h3 id="zealandia">Zealandia</h3>
+<ul>
+<li><a href="https://chcon.nz">CHCon</a> - Christchurch Hacker Con, Only South Island of New Zealand hacker con.</li>
+</ul>
+<h2 id="exfiltration-tools">Exfiltration Tools</h2>
+<ul>
+<li><a href="https://github.com/sensepost/DET">DET</a> - Proof of concept to perform data exfiltration using either single or multiple channel(s) at the same time.</li>
+<li><a href="https://code.kryo.se/iodine/">Iodine</a> - Tunnel IPv4 data through a DNS server; useful for exfiltration from networks where Internet access is firewalled, but DNS queries are allowed.</li>
+<li><a href="https://github.com/trustedsec/trevorc2">TrevorC2</a> - Client/server tool for masking command and control and data exfiltration through a normally browsable website, not typical HTTP POST requests.</li>
+<li><a href="https://github.com/iagox86/dnscat2">dnscat2</a> - Tool designed to create an encrypted command and control channel over the DNS protocol, which is an effective tunnel out of almost every network.</li>
+<li><a href="https://github.com/samyk/pwnat">pwnat</a> - Punches holes in firewalls and NATs.</li>
+<li><a href="http://tgcd.sourceforge.net/">tgcd</a> - Simple Unix network utility to extend the accessibility of TCP/IP based network services beyond firewalls.</li>
+<li><a href="https://github.com/ariary/QueenSono">QueenSono</a> - Client/Server Binaries for data exfiltration with ICMP. Useful in a network where ICMP protocol is less monitored than others (which is a common case).</li>
+</ul>
+<h2 id="exploit-development-tools">Exploit Development Tools</h2>
+<p>See also <em><a href="#reverse-engineering-tools">Reverse Engineering Tools</a></em>.</p>
+<ul>
+<li><a href="https://github.com/h26forge/h26forge">H26Forge</a> - Domain-specific infrastructure for analyzing, generating, and manipulating syntactically correct but semantically spec-non-compliant video files.</li>
+<li><a href="https://github.com/trustedsec/unicorn">Magic Unicorn</a> - Shellcode generator for numerous attack vectors, including Microsoft Office macros, PowerShell, HTML applications (HTA), or <code>certutil</code> (using fake certificates).</li>
+<li><a href="https://github.com/Gallopsled/pwntools">Pwntools</a> - Rapid exploit development framework built for use in CTFs.</li>
+<li><a href="https://github.com/rastating/wordpress-exploit-framework">Wordpress Exploit Framework</a> - Ruby framework for developing and using modules which aid in the penetration testing of WordPress powered websites and systems.</li>
+<li><a href="https://github.com/longld/peda">peda</a> - Python Exploit Development Assistance for GDB.</li>
+</ul>
+<h2 id="file-format-analysis-tools">File Format Analysis Tools</h2>
+<ul>
+<li><a href="https://www.sno.phy.queensu.ca/~phil/exiftool/">ExifTool</a> - Platform-independent Perl library plus a command-line application for reading, writing and editing meta information in a wide variety of files.</li>
+<li><a href="https://hachoir.readthedocs.io/">Hachoir</a> - Python library to view and edit a binary stream as tree of fields and tools for metadata extraction.</li>
+<li><a href="http://kaitai.io/">Kaitai Struct</a> - File formats and network protocols dissection language and web IDE, generating parsers in C++, C#, Java, JavaScript, Perl, PHP, Python, Ruby.</li>
+<li><a href="https://eternal-todo.com/tools/peepdf-pdf-analysis-tool">peepdf</a> - Python tool to explore PDF files in order to find out if the file can be harmful or not.</li>
+<li><a href="https://codisec.com/veles/">Veles</a> - Binary data visualization and analysis tool.</li>
+</ul>
+<h2 id="gnulinux-utilities">GNU/Linux Utilities</h2>
+<ul>
+<li><a href="https://github.com/n00py/Hwacha">Hwacha</a> - Post-exploitation tool to quickly execute payloads via SSH on one or more Linux systems simultaneously.</li>
+<li><a href="https://github.com/PenturaLabs/Linux_Exploit_Suggester">Linux Exploit Suggester</a> - Heuristic reporting on potentially viable exploits for a given GNU/Linux system.</li>
+<li><a href="https://cisofy.com/lynis/">Lynis</a> - Auditing tool for UNIX-based systems.</li>
+<li><a href="https://www.trapkit.de/tools/checksec.html">checksec.sh</a> - Shell script designed to test what standard Linux OS and PaX security features are being used.</li>
+</ul>
+<h2 id="hash-cracking-tools">Hash Cracking Tools</h2>
+<ul>
+<li><a href="https://github.com/glv2/bruteforce-wallet">BruteForce Wallet</a> - Find the password of an encrypted wallet file (i.e. <code>wallet.dat</code>).</li>
+<li><a href="https://digi.ninja/projects/cewl.php">CeWL</a> - Generates custom wordlists by spidering a target&rsquo;s website and collecting unique words.</li>
+<li><a href="https://github.com/nil0x42/duplicut">duplicut</a> - Quickly remove duplicates, without changing the order, and without getting OOM on huge wordlists.</li>
+<li><a href="https://github.com/fireeye/gocrack">GoCrack</a> - Management Web frontend for distributed password cracking sessions using hashcat (or other supported tools) written in Go.</li>
+<li><a href="http://hashcat.net/hashcat/">Hashcat</a> - The more fast hash cracker.</li>
+<li><a href="https://github.com/trustedsec/hate_crack">hate_crack</a> - Tool for automating cracking methodologies through Hashcat.</li>
+<li><a href="https://github.com/lmammino/jwt-cracker">JWT Cracker</a> - Simple HS256 JSON Web Token (JWT) token brute force cracker.</li>
+<li><a href="http://www.openwall.com/john/">John the Ripper</a> - Fast password cracker.</li>
+<li><a href="http://rarcrack.sourceforge.net">Rar Crack</a> - RAR bruteforce cracker.</li>
+</ul>
+<h2 id="hex-editors">Hex Editors</h2>
+<ul>
+<li><a href="https://github.com/bwrsandman/Bless">Bless</a> - High quality, full featured, cross-platform graphical hex editor written in Gtk#.</li>
+<li><a href="http://frhed.sourceforge.net/">Frhed</a> - Binary file editor for Windows.</li>
+<li><a href="http://ridiculousfish.com/hexfiend/">Hex Fiend</a> - Fast, open source, hex editor for macOS with support for viewing  binary diffs.</li>
+<li><a href="https://hexed.it">HexEdit.js</a> - Browser-based hex editing.</li>
+<li><a href="https://hexinator.com/">Hexinator</a> - World&rsquo;s finest (proprietary, commercial) Hex Editor.</li>
+<li><a href="https://github.com/pixel/hexedit">hexedit</a> - Simple, fast, console-based hex editor.</li>
+<li><a href="http://www.wxhexeditor.org/">wxHexEditor</a> - Free GUI hex editor for GNU/Linux, macOS, and Windows.</li>
+</ul>
+<h2 id="industrial-control-and-scada-systems">Industrial Control and SCADA Systems</h2>
+<p>See also <a href="https://github.com/hslatman/awesome-industrial-control-system-security">awesome-industrial-control-system-security</a>.</p>
+<ul>
+<li><a href="https://github.com/dark-lbp/isf">Industrial Exploitation Framework (ISF)</a> - Metasploit-like exploit framework based on routersploit designed to target Industrial Control Systems (ICS), SCADA devices, PLC firmware, and more.</li>
+<li><a href="https://github.com/klsecservices/s7scan">s7scan</a> - Scanner for enumerating Siemens S7 PLCs on a TCP/IP or LLC network.</li>
+<li><a href="https://opalopc.com/">OpalOPC</a> - Commercial OPC UA vulnerability assessment tool, sold by Molemmat.</li>
+</ul>
+<h2 id="intentionally-vulnerable-systems">Intentionally Vulnerable Systems</h2>
+<p>See also <a href="https://github.com/kaiiyer/awesome-vulnerable">awesome-vulnerable</a>.</p>
+<ul>
+<li><a href="https://pentest-ground.com/">Pentest-Ground</a>.</li>
+</ul>
+<h3 id="intentionally-vulnerable-systems-as-docker-containers">Intentionally Vulnerable Systems as Docker Containers</h3>
+<ul>
+<li><a href="https://hub.docker.com/r/citizenstig/dvwa/">Damn Vulnerable Web Application (DVWA)</a> - <code>docker pull citizenstig/dvwa</code>.</li>
+<li><a href="https://github.com/bkimminich/juice-shop#docker-container--">OWASP Juice Shop</a> - <code>docker pull bkimminich/juice-shop</code>.</li>
+<li><a href="https://hub.docker.com/r/citizenstig/nowasp/">OWASP Mutillidae II Web Pen-Test Practice Application</a> - <code>docker pull citizenstig/nowasp</code>.</li>
+<li><a href="https://github.com/owasp/nodegoat#option-3---run-nodegoat-on-docker">OWASP NodeGoat</a> - <code>docker-compose build &amp;&amp; docker-compose up</code>.</li>
+<li><a href="https://hub.docker.com/r/ismisepaul/securityshepherd/">OWASP Security Shepherd</a> - <code>docker pull ismisepaul/securityshepherd</code>.</li>
+<li><a href="https://hub.docker.com/r/webgoat/webgoat-7.1/">OWASP WebGoat Project 7.1 docker image</a> - <code>docker pull webgoat/webgoat-7.1</code>.</li>
+<li><a href="https://hub.docker.com/r/webgoat/webgoat-8.0/">OWASP WebGoat Project 8.0 docker image</a> - <code>docker pull webgoat/webgoat-8.0</code>.</li>
+<li><a href="https://hub.docker.com/r/hmlio/vaas-cve-2014-0160/">Vulnerability as a service: Heartbleed</a> - <code>docker pull hmlio/vaas-cve-2014-0160</code>.</li>
+<li><a href="https://hub.docker.com/r/vulnerables/cve-2017-7494/">Vulnerability as a service: SambaCry</a> - <code>docker pull vulnerables/cve-2017-7494</code>.</li>
+<li><a href="https://hub.docker.com/r/hmlio/vaas-cve-2014-6271/">Vulnerability as a service: Shellshock</a> - <code>docker pull hmlio/vaas-cve-2014-6271</code>.</li>
+<li><a href="https://hub.docker.com/r/wpscanteam/vulnerablewordpress/">Vulnerable WordPress Installation</a> - <code>docker pull wpscanteam/vulnerablewordpress</code>.</li>
+</ul>
+<h2 id="lock-picking">Lock Picking</h2>
+<p>See <a href="https://github.com/fabacab/awesome-lockpicking">awesome-lockpicking</a>.</p>
+<h2 id="macos-utilities">macOS Utilities</h2>
+<ul>
+<li><a href="https://github.com/kdaoudieh/Bella">Bella</a> - Pure Python post-exploitation data mining and remote administration tool for macOS.</li>
+<li><a href="https://github.com/Marten4n6/EvilOSX">EvilOSX</a> - Modular RAT that uses numerous evasion and exfiltration techniques out-of-the-box.</li>
+</ul>
+<h2 id="multi-paradigm-frameworks">Multi-paradigm Frameworks</h2>
+<ul>
+<li><a href="http://fastandeasyhacking.com/">Armitage</a> - Java-based GUI front-end for the Metasploit Framework.</li>
+<li><a href="https://github.com/NullArray/AutoSploit">AutoSploit</a> - Automated mass exploiter, which collects target by employing the Shodan.io API and programmatically chooses Metasploit exploit modules based on the Shodan query.</li>
+<li><a href="https://github.com/stevenaldinger/decker">Decker</a> - Penetration testing orchestration and automation framework, which allows writing declarative, reusable configurations capable of ingesting variables and using outputs of tools it has run as inputs to others.</li>
+<li><a href="https://github.com/infobyte/faraday">Faraday</a> - Multiuser integrated pentesting environment for red teams performing cooperative penetration tests, security audits, and risk assessments.</li>
+<li><a href="https://www.metasploit.com/">Metasploit</a> - Software for offensive security teams to help verify vulnerabilities and manage security assessments.</li>
+<li><a href="https://github.com/n1nj4sec/pupy">Pupy</a> - Cross-platform (Windows, Linux, macOS, Android) remote administration and post-exploitation tool.</li>
+<li><a href="https://ronin-rb.dev">Ronin</a> - Free and Open Source Ruby Toolkit for Security Research and Development, providing many different libraries and commands for a variety of security tasks, such as recon, vulnerability scanning, exploit development, exploitation, post-exploitation, and more.</li>
+</ul>
+<h2 id="network-tools">Network Tools</h2>
+<ul>
+<li><a href="https://github.com/byt3bl33d3r/CrackMapExec">CrackMapExec</a> - Swiss army knife for pentesting networks.</li>
+<li><a href="https://github.com/SpiderLabs/ikeforce">IKEForce</a> - Command line IPSEC VPN brute forcing tool for Linux that allows group name/ID enumeration and XAUTH brute forcing capabilities.</li>
+<li><a href="http://sniff.su/">Intercepter-NG</a> - Multifunctional network toolkit.</li>
+<li><a href="https://github.com/GoVanguard/legion">Legion</a> - Graphical semi-automated discovery and reconnaissance framework based on Python 3  and forked from SPARTA.</li>
+<li><a href="http://network-tools.com/">Network-Tools.com</a> - Website offering an interface to numerous basic network utilities like <code>ping</code>, <code>traceroute</code>, <code>whois</code>, and more.</li>
+<li><a href="https://nmap.org/ncrack/">Ncrack</a> - High-speed network authentication cracking tool built to help companies secure their networks by proactively testing all their hosts and networking devices for poor passwords.</li>
+<li><a href="http://h.foofus.net/?page_id=218">Praeda</a> - Automated multi-function printer data harvester for gathering usable data during security assessments.</li>
+<li><a href="https://github.com/RUB-NDS/PRET">Printer Exploitation Toolkit (PRET)</a> - Tool for printer security testing capable of IP and USB connectivity, fuzzing, and exploitation of PostScript, PJL, and PCL printer language features.</li>
+<li><a href="https://sparta.secforce.com/">SPARTA</a> - Graphical interface offering scriptable, configurable access to existing network infrastructure scanning and enumeration tools.</li>
+<li><a href="https://github.com/SigPloiter/SigPloit">SigPloit</a> - Signaling security testing framework dedicated to telecom security for researching vulnerabilites in the signaling protocols used in mobile (cellular phone) operators.</li>
+<li><a href="https://github.com/Sab0tag3d/SIET">Smart Install Exploitation Tool (SIET)</a> - Scripts for identifying Cisco Smart Install-enabled switches on a network and then manipulating them.</li>
+<li><a href="https://github.com/vanhauser-thc/thc-hydra">THC Hydra</a> - Online password cracking tool with built-in support for many network protocols, including HTTP, SMB, FTP, telnet, ICQ, MySQL, LDAP, IMAP, VNC, and more.</li>
+<li><a href="https://github.com/google/tsunami-security-scanner">Tsunami</a> - General purpose network security scanner with an extensible plugin system for detecting high severity vulnerabilities with high confidence.</li>
+<li><a href="https://github.com/hatRiot/zarp">Zarp</a> - Network attack tool centered around the exploitation of local networks.</li>
+<li><a href="https://github.com/elceef/dnstwist">dnstwist</a> - Domain name permutation engine for detecting typo squatting, phishing and corporate espionage.</li>
+<li><a href="https://www.monkey.org/~dugsong/dsniff/">dsniff</a> - Collection of tools for network auditing and pentesting.</li>
+<li><a href="https://github.com/CoreSecurity/impacket">impacket</a> - Collection of Python classes for working with network protocols.</li>
+<li><a href="https://github.com/RedTeamOperations/PivotSuite">pivotsuite</a> - Portable, platform independent and powerful network pivoting toolkit.</li>
+<li><a href="https://github.com/reverse-shell/routersploit">routersploit</a> - Open source exploitation framework similar to Metasploit but dedicated to embedded devices.</li>
+<li><a href="https://github.com/kpcyrd/rshijack">rshijack</a> - TCP connection hijacker, Rust rewrite of <code>shijack</code>.</li>
+</ul>
+<h3 id="ddos-tools">DDoS Tools</h3>
+<ul>
+<li><a href="https://github.com/rozgo/anevicon">Anevicon</a> - Powerful UDP-based load generator, written in Rust.</li>
+<li><a href="https://github.com/Balasys/dheater">D(HE)ater</a> - D(HE)ater sends forged cryptographic handshake messages to enforce the Diffie-Hellman key exchange.</li>
+<li><a href="https://sourceforge.net/projects/high-orbit-ion-cannon/">HOIC</a> - Updated version of Low Orbit Ion Cannon, has &lsquo;boosters&rsquo; to get around common counter measures.</li>
+<li><a href="https://github.com/NewEraCracker/LOIC">Low Orbit Ion Canon (LOIC)</a> - Open source network stress tool written for Windows.</li>
+<li><a href="https://github.com/649/Memcrashed-DDoS-Exploit">Memcrashed</a> - DDoS attack tool for sending forged UDP packets to vulnerable Memcached servers obtained using Shodan API.</li>
+<li><a href="https://github.com/gkbrk/slowloris">SlowLoris</a> - DoS tool that uses low bandwidth on the attacking side.</li>
+<li><a href="https://gitlab.com/fredericopissarra/t50/">T50</a> - Faster network stress tool.</li>
+<li><a href="https://github.com/epsylon/ufonet">UFONet</a> - Abuses OSI layer 7 HTTP to create/manage &lsquo;zombies&rsquo; and to conduct different attacks using; <code>GET</code>/<code>POST</code>, multithreading, proxies, origin spoofing methods, cache evasion techniques, etc.</li>
+</ul>
+<h3 id="network-reconnaissance-tools">Network Reconnaissance Tools</h3>
+<ul>
+<li><a href="https://github.com/cyberark/ACLight">ACLight</a> - Script for advanced discovery of sensitive Privileged Accounts - includes Shadow Admins.</li>
+<li><a href="https://github.com/michenriksen/aquatone">AQUATONE</a> - Subdomain discovery tool utilizing various open sources producing a report that can be used as input to other tools.</li>
+<li><a href="https://github.com/m0rtem/CloudFail">CloudFail</a> - Unmask server IP addresses hidden behind Cloudflare by searching old database records and detecting misconfigured DNS.</li>
+<li><a href="https://dnsdumpster.com/">DNSDumpster</a> - Online DNS recon and search service.</li>
+<li><a href="https://github.com/robertdavidgraham/masscan">Mass Scan</a> - TCP port scanner, spews SYN packets asynchronously, scanning entire Internet in under 5 minutes.</li>
+<li><a href="https://github.com/OWASP/Amass">OWASP Amass</a> - Subdomain enumeration via scraping, web archives, brute forcing, permutations, reverse DNS sweeping, TLS certificates, passive DNS data sources, etc.</li>
+<li><a href="https://github.com/johnnyxmas/ScanCannon">ScanCannon</a> - POSIX-compliant BASH script to quickly enumerate large networks by calling <code>masscan</code> to quickly identify open ports and then <code>nmap</code> to gain details on the systems/services on those ports.</li>
+<li><a href="https://github.com/evilsocket/xray">XRay</a> - Network (sub)domain discovery and reconnaissance automation tool.</li>
+<li><a href="https://github.com/fwaeytens/dnsenum/">dnsenum</a> - Perl script that enumerates DNS information from a domain, attempts zone transfers, performs a brute force dictionary style attack, and then performs reverse look-ups on the results.</li>
+<li><a href="https://github.com/makefu/dnsmap/">dnsmap</a> - Passive DNS network mapper.</li>
+<li><a href="https://github.com/darkoperator/dnsrecon/">dnsrecon</a> - DNS enumeration script.</li>
+<li><a href="http://www.mavetju.org/unix/dnstracer.php">dnstracer</a> - Determines where a given DNS server gets its information from, and follows the chain of DNS servers.</li>
+<li><a href="https://github.com/mschwager/fierce">fierce</a> - Python3 port of the original <code>fierce.pl</code> DNS reconnaissance tool for locating non-contiguous IP space.</li>
+<li><a href="https://github.com/netdiscover-scanner/netdiscover">netdiscover</a> - Network address discovery scanner, based on ARP sweeps, developed mainly for those wireless networks without a DHCP server.</li>
+<li><a href="https://nmap.org/">nmap</a> - Free security scanner for network exploration &amp; security audits.</li>
+<li><a href="https://github.com/chrislee35/passivedns-client">passivedns-client</a> - Library and query tool for querying several passive DNS providers.</li>
+<li><a href="https://github.com/gamelinux/passivedns">passivedns</a> - Network sniffer that logs all DNS server replies for use in a passive DNS setup.</li>
+<li><a href="https://github.com/rustscan/rustscan">RustScan</a> - Lightweight and quick open-source port scanner designed to automatically pipe open ports into Nmap.</li>
+<li><a href="https://github.com/vesche/scanless">scanless</a> - Utility for using websites to perform port scans on your behalf so as not to reveal your own IP.</li>
+<li><a href="https://github.com/ShawnDEvans/smbmap">smbmap</a> - Handy SMB enumeration tool.</li>
+<li><a href="https://github.com/TheRook/subbrute">subbrute</a> - DNS meta-query spider that enumerates DNS records, and subdomains.</li>
+<li><a href="https://zmap.io/">zmap</a> - Open source network scanner that enables researchers to easily perform Internet-wide network studies.</li>
+</ul>
+<h3 id="protocol-analyzers-and-sniffers">Protocol Analyzers and Sniffers</h3>
+<p>See also <a href="https://github.com/caesar0301/awesome-pcaptools">awesome-pcaptools</a>.</p>
+<ul>
+<li><a href="http://www.iwaxx.com/debookee/">Debookee</a> - Simple and powerful network traffic analyzer for macOS.</li>
+<li><a href="https://github.com/USArmyResearchLab/Dshell">Dshell</a> - Network forensic analysis framework.</li>
+<li><a href="https://github.com/netzob/netzob">Netzob</a> - Reverse engineering, traffic generation and fuzzing of communication protocols.</li>
+<li><a href="https://www.wireshark.org/">Wireshark</a> - Widely-used graphical, cross-platform network protocol analyzer.</li>
+<li><a href="https://github.com/netsniff-ng/netsniff-ng">netsniff-ng</a> - Swiss army knife for network sniffing.</li>
+<li><a href="https://github.com/kpcyrd/sniffglue">sniffglue</a> - Secure multithreaded packet sniffer.</li>
+<li><a href="http://www.tcpdump.org/">tcpdump/libpcap</a> - Common packet analyzer that runs under the command line.</li>
+</ul>
+<h3 id="network-traffic-replay-and-editing-tools">Network Traffic Replay and Editing Tools</h3>
+<ul>
+<li><a href="https://www.tracewrangler.com/">TraceWrangler</a> - Network capture file toolkit that can edit and merge <code>pcap</code> or <code>pcapng</code> files with batch editing features.</li>
+<li><a href="https://wireedit.com/">WireEdit</a> - Full stack WYSIWYG pcap editor (requires a free license to edit packets).</li>
+<li><a href="http://bittwist.sourceforge.net/">bittwist</a> - Simple yet powerful libpcap-based Ethernet packet generator useful in simulating networking traffic or scenario, testing firewall, IDS, and IPS, and troubleshooting various network problems.</li>
+<li><a href="https://github.com/antirez/hping">hping3</a> - Network tool able to send custom TCP/IP packets.</li>
+<li><a href="https://github.com/rafael-santiago/pig">pig</a> - GNU/Linux packet crafting tool.</li>
+<li><a href="https://github.com/secdev/scapy">scapy</a> - Python-based interactive packet manipulation program and library.</li>
+<li><a href="https://tcpreplay.appneta.com/">tcpreplay</a> - Suite of free Open Source utilities for editing and replaying previously captured network traffic.</li>
+</ul>
+<h3 id="proxies-and-machine-in-the-middle-mitm-tools">Proxies and Machine-in-the-Middle (MITM) Tools</h3>
+<p>See also <em><a href="#intercepting-web-proxies">Intercepting Web proxies</a></em>.</p>
+<ul>
+<li><a href="https://www.bettercap.org/">BetterCAP</a> - Modular, portable and easily extensible MITM framework.</li>
+<li><a href="http://www.ettercap-project.org">Ettercap</a> - Comprehensive, mature suite for machine-in-the-middle attacks.</li>
+<li><a href="https://github.com/portantier/habu">Habu</a> - Python utility implementing a variety of network attacks, such as ARP poisoning, DHCP starvation, and more.</li>
+<li><a href="https://github.com/puresec/lambda-proxy">Lambda-Proxy</a> - Utility for testing SQL Injection vulnerabilities on AWS Lambda serverless functions.</li>
+<li><a href="https://github.com/byt3bl33d3r/MITMf">MITMf</a> - Framework for Man-In-The-Middle attacks.</li>
+<li><a href="https://github.com/r00t-3xp10it/morpheus">Morpheus</a> - Automated ettercap TCP/IP Hijacking tool.</li>
+<li><a href="https://github.com/jtesta/ssh-mitm">SSH MITM</a> - Intercept SSH connections with a proxy; all plaintext passwords and sessions are logged to disk.</li>
+<li><a href="https://github.com/iphelix/dnschef">dnschef</a> - Highly configurable DNS proxy for pentesters.</li>
+<li><a href="https://github.com/infobyte/evilgrade">evilgrade</a> - Modular framework to take advantage of poor upgrade implementations by injecting fake updates.</li>
+<li><a href="https://github.com/justmao945/mallory">mallory</a> - HTTP/HTTPS proxy over SSH.</li>
+<li><a href="https://github.com/nametoolong/oregano">oregano</a> - Python module that runs as a machine-in-the-middle (MITM) accepting Tor client requests.</li>
+<li><a href="https://dlrobertson.github.io/sylkie/">sylkie</a> - Command line tool and library for testing networks for common address spoofing security vulnerabilities in IPv6 networks using the Neighbor Discovery Protocol.</li>
+<li><a href="https://github.com/Warxim/petep">PETEP</a> - Extensible TCP/UDP proxy with GUI for traffic analysis &amp; modification with SSL/TLS support.</li>
+</ul>
+<h3 id="transport-layer-security-tools">Transport Layer Security Tools</h3>
+<ul>
+<li><a href="https://github.com/nabla-c0d3/sslyze">SSLyze</a> - Fast and comprehensive TLS/SSL configuration analyzer to help identify security mis-configurations.</li>
+<li><a href="https://github.com/crackpkcs12/crackpkcs12">crackpkcs12</a> - Multithreaded program to crack PKCS#12 files (<code>.p12</code> and <code>.pfx</code> extensions), such as TLS/SSL certificates.</li>
+<li><a href="https://github.com/drwetter/testssl.sh">testssl.sh</a> - Command line tool which checks a server&rsquo;s service on any port for the support of TLS/SSL ciphers, protocols as well as some cryptographic flaws.</li>
+<li><a href="https://github.com/WestpointLtd/tls_prober">tls_prober</a> - Fingerprint a server&rsquo;s SSL/TLS implementation.</li>
+</ul>
+<h3 id="wireless-network-tools">Wireless Network Tools</h3>
+<ul>
+<li><a href="http://www.aircrack-ng.org/">Aircrack-ng</a> - Set of tools for auditing wireless networks.</li>
+<li><a href="https://github.com/v1s1t0r1sh3r3/airgeddon">Airgeddon</a> - Multi-use bash script for Linux systems to audit wireless networks.</li>
+<li><a href="https://github.com/MisterBianco/BoopSuite">BoopSuite</a> - Suite of tools written in Python for wireless auditing.</li>
+<li><a href="http://git.kali.org/gitweb/?p=packages/bully.git;a=summary">Bully</a> - Implementation of the WPS brute force attack, written in C.</li>
+<li><a href="https://github.com/joswr1ght/cowpatty">Cowpatty</a> - Brute-force dictionary attack against WPA-PSK.</li>
+<li><a href="https://github.com/FluxionNetwork/fluxion">Fluxion</a> - Suite of automated social engineering based WPA attacks.</li>
+<li><a href="https://github.com/securingsam/krackdetector">KRACK Detector</a> - Detect and prevent KRACK attacks in your network.</li>
+<li><a href="https://kismetwireless.net/">Kismet</a> - Wireless network detector, sniffer, and IDS.</li>
+<li><a href="https://github.com/soxrok2212/PSKracker">PSKracker</a> - Collection of WPA/WPA2/WPS default algorithms, password generators, and PIN generators written in C.</li>
+<li><a href="https://code.google.com/archive/p/reaver-wps">Reaver</a> - Brute force attack against WiFi Protected Setup.</li>
+<li><a href="https://www.wifipineapple.com/">WiFi Pineapple</a> - Wireless auditing and penetration testing platform.</li>
+<li><a href="https://github.com/P0cL4bs/WiFi-Pumpkin">WiFi-Pumpkin</a> - Framework for rogue Wi-Fi access point attack.</li>
+<li><a href="https://github.com/derv82/wifite">Wifite</a> - Automated wireless attack tool.</li>
+<li><a href="https://github.com/entropy1337/infernal-twin">infernal-twin</a> - Automated wireless hacking tool.</li>
+<li><a href="https://github.com/vanhoefm/krackattacks-scripts">krackattacks-scripts</a> - WPA2 Krack attack scripts.</li>
+<li><a href="https://github.com/evilsocket/pwnagotchi">pwnagotchi</a> - Deep reinforcement learning based AI that learns from the Wi-Fi environment and instruments BetterCAP in order to maximize the WPA key material captured.</li>
+<li><a href="https://github.com/0x90/wifi-arsenal">wifi-arsenal</a> - Resources for Wi-Fi Pentesting.</li>
+</ul>
+<h2 id="network-vulnerability-scanners">Network Vulnerability Scanners</h2>
+<ul>
+<li><a href="https://github.com/sethsec/celerystalk">celerystalk</a> - Asynchronous enumeration and vulnerability scanner that &ldquo;runs all the tools on all the hosts&rdquo; in a configurable manner.</li>
+<li><a href="https://kube-hunter.aquasec.com/">kube-hunter</a> - Open-source tool that runs a set of tests (&ldquo;hunters&rdquo;) for security issues in Kubernetes clusters from either outside (&ldquo;attacker&rsquo;s view&rdquo;) or inside a cluster.</li>
+<li><a href="https://www.tenable.com/products/nessus-vulnerability-scanner">Nessus</a> - Commercial vulnerability management, configuration, and compliance assessment platform, sold by Tenable.</li>
+<li><a href="https://www.netsparker.com/pricing/">Netsparker Application Security Scanner</a> - Application security scanner to automatically find security flaws.</li>
+<li><a href="https://www.rapid7.com/products/nexpose/">Nexpose</a> - Commercial vulnerability and risk management assessment engine that integrates with Metasploit, sold by Rapid7.</li>
+<li><a href="http://www.openvas.org/">OpenVAS</a> - Free software implementation of the popular Nessus vulnerability assessment system.</li>
+<li><a href="https://github.com/future-architect/vuls">Vuls</a> - Agentless vulnerability scanner for GNU/Linux and FreeBSD, written in Go.</li>
+</ul>
+<h3 id="web-vulnerability-scanners">Web Vulnerability Scanners</h3>
+<ul>
+<li><a href="https://github.com/tijme/angularjs-csti-scanner">ACSTIS</a> - Automated client-side template injection (sandbox escape/bypass) detection for AngularJS.</li>
+<li><a href="http://www.arachni-scanner.com/">Arachni</a> - Scriptable framework for evaluating the security of web applications.</li>
+<li><a href="https://github.com/TheM4hd1/JCS">JCS</a> - Joomla Vulnerability Component Scanner with automatic database updater from exploitdb and packetstorm.</li>
+<li><a href="https://cirt.net/nikto2">Nikto</a> - Noisy but fast black box web server and web application vulnerability scanner.</li>
+<li><a href="https://github.com/UltimateHackers/sqlmate">SQLmate</a> - Friend of <code>sqlmap</code> that identifies SQLi vulnerabilities based on a given dork and (optional) website.</li>
+<li><a href="https://secapps.com/">SecApps</a> - In-browser web application security testing suite.</li>
+<li><a href="https://wpscan.org/">WPScan</a> - Black box WordPress vulnerability scanner.</li>
+<li><a href="http://wapiti.sourceforge.net/">Wapiti</a> - Black box web application vulnerability scanner with built-in fuzzer.</li>
+<li><a href="https://www.webreaver.com/">WebReaver</a> - Commercial, graphical web application vulnerability scanner designed for macOS.</li>
+<li><a href="https://code.google.com/archive/p/cms-explorer/">cms-explorer</a> - Reveal the specific modules, plugins, components and themes that various websites powered by content management systems are running.</li>
+<li><a href="https://www.owasp.org/index.php/Category:OWASP_Joomla_Vulnerability_Scanner_Project">joomscan</a> - Joomla vulnerability scanner.</li>
+<li><a href="https://www.kali.org/tools/skipfish/">skipfish</a> - Performant and adaptable active web application security reconnaissance tool.</li>
+<li><a href="https://github.com/andresriancho/w3af">w3af</a> - Web application attack and audit framework.</li>
+</ul>
+<h2 id="online-resources">Online Resources</h2>
+<h3 id="online-operating-systems-resources">Online Operating Systems Resources</h3>
+<ul>
+<li><a href="https://distrowatch.com/search.php?category=Security">DistroWatch.com&rsquo;s Security Category</a> - Website dedicated to talking about, reviewing, and keeping up to date with open source operating systems.</li>
+</ul>
+<h3 id="online-penetration-testing-resources">Online Penetration Testing Resources</h3>
+<ul>
+<li><a href="https://attack.mitre.org/">MITRE&rsquo;s Adversarial Tactics, Techniques &amp; Common Knowledge (ATT&amp;CK)</a> - Curated knowledge base and model for cyber adversary behavior.</li>
+<li><a href="https://www.offensive-security.com/metasploit-unleashed/">Metasploit Unleashed</a> - Free Offensive Security Metasploit course.</li>
+<li><a href="https://www.owasp.org/index.php/Main_Page">Open Web Application Security Project (OWASP)</a> - Worldwide not-for-profit charitable organization focused on improving the security of especially Web-based and Application-layer software.</li>
+<li><a href="https://github.com/nixawk/pentest-wiki">PENTEST-WIKI</a> - Free online security knowledge library for pentesters and researchers.</li>
+<li><a href="http://www.pentest-standard.org/">Penetration Testing Execution Standard (PTES)</a> - Documentation designed to provide a common language and scope for performing and reporting the results of a penetration test.</li>
+<li><a href="http://www.vulnerabilityassessment.co.uk/Penetration%20Test.html">Penetration Testing Framework (PTF)</a> - Outline for performing penetration tests compiled as a general framework usable by vulnerability analysts and penetration testers alike.</li>
+<li><a href="http://www.xss-payloads.com">XSS-Payloads</a> - Resource dedicated to all things XSS (cross-site), including payloads, tools, games, and documentation.</li>
+</ul>
+<h3 id="other-lists-online">Other Lists Online</h3>
+<ul>
+<li><a href="https://github.com/quozd/awesome-dotnet">.NET Programming</a> - Software framework for Microsoft Windows platform development.</li>
+<li><a href="https://administraitor.video">Infosec/hacking videos recorded by cooper</a> - Collection of security conferences recorded by Cooper.</li>
+<li><a href="https://github.com/sundaysec/Android-Exploits">Android Exploits</a> - Guide on Android Exploitation and Hacks.</li>
+<li><a href="https://github.com/ashishb/android-security-awesome">Android Security</a> - Collection of Android security related resources.</li>
+<li><a href="https://github.com/paragonie/awesome-appsec">AppSec</a> - Resources for learning about application security.</li>
+<li><a href="https://github.com/bayandin/awesome-awesomeness">Awesome Awesomness</a> - The List of the Lists.</li>
+<li><a href="https://github.com/fabacab/awesome-malware">Awesome Malware</a> - Curated collection of awesome malware, botnets, and other post-exploitation tools.</li>
+<li><a href="https://github.com/jakejarvis/awesome-shodan-queries">Awesome Shodan Queries</a> - Awesome list of useful, funny, and depressing search queries for Shodan.</li>
+<li><a href="https://github.com/toniblyx/my-arsenal-of-aws-security-tools">AWS Tool Arsenal</a> - List of tools for testing and securing AWS environments.</li>
+<li><a href="https://github.com/fabacab/awesome-cybersecurity-blueteam">Blue Team</a> - Awesome resources, tools, and other shiny things for cybersecurity blue teams.</li>
+<li><a href="https://github.com/fffaraz/awesome-cpp">C/C++ Programming</a> - One of the main language for open source security tools.</li>
+<li><a href="https://github.com/apsdehal/awesome-ctf">CTFs</a> - Capture The Flag frameworks, libraries, etc.</li>
+<li><a href="https://github.com/Cugu/awesome-forensics">Forensics</a> - Free (mostly open source) forensic analysis tools and resources.</li>
+<li><a href="https://github.com/carpedm20/awesome-hacking">Hacking</a> - Tutorials, tools, and resources.</li>
+<li><a href="https://github.com/paralax/awesome-honeypots">Honeypots</a> - Honeypots, tools, components, and more.</li>
+<li><a href="https://github.com/AnarchoTechNYC/meta/wiki/InfoSec#hacking-challenges">InfoSec § Hacking challenges</a> - Comprehensive directory of CTFs, wargames, hacking challenge websites, pentest practice lab exercises, and more.</li>
+<li><a href="https://github.com/onlurking/awesome-infosec">Infosec</a> - Information security resources for pentesting, forensics, and more.</li>
+<li><a href="https://github.com/sorrycc/awesome-javascript">JavaScript Programming</a> - In-browser development and scripting.</li>
+<li><a href="http://tools.kali.org/tools-listing">Kali Linux Tools</a> - List of tools present in Kali Linux.</li>
+<li><a href="https://github.com/sindresorhus/awesome-nodejs">Node.js Programming by @sindresorhus</a> - Curated list of delightful Node.js packages and resources.</li>
+<li><a href="https://github.com/ByteSnipers/awesome-pentest-cheat-sheets">Pentest Cheat Sheets</a> - Awesome Pentest Cheat Sheets.</li>
+<li><a href="https://github.com/svaksha/pythonidae">Python Programming by @svaksha</a> - General Python programming.</li>
+<li><a href="https://github.com/vinta/awesome-python">Python Programming by @vinta</a> - General Python programming.</li>
+<li><a href="https://github.com/dloss/python-pentest-tools">Python tools for penetration testers</a> - Lots of pentesting tools are written in Python.</li>
+<li><a href="https://inventory.raw.pm/">Rawsec&rsquo;s CyberSecurity Inventory</a> - An open-source inventory of tools, resources, CTF platforms and Operating Systems about CyberSecurity. (<a href="https://gitlab.com/rawsec/rawsec-cybersecurity-list">Source</a>)</li>
+<li><a href="https://github.com/yeyintminthuhtut/Awesome-Red-Teaming">Red Teaming</a> - List of Awesome Red Teaming Resources.</li>
+<li><a href="https://github.com/Sdogruyol/awesome-ruby">Ruby Programming by @Sdogruyol</a> - The de-facto language for writing exploits.</li>
+<li><a href="https://github.com/dreikanter/ruby-bookmarks">Ruby Programming by @dreikanter</a> - The de-facto language for writing exploits.</li>
+<li><a href="https://github.com/markets/awesome-ruby">Ruby Programming by @markets</a> - The de-facto language for writing exploits.</li>
+<li><a href="https://github.com/danielmiessler/SecLists">SecLists</a> - Collection of multiple types of lists used during security assessments.</li>
+<li><a href="http://sectools.org/">SecTools</a> - Top 125 Network Security Tools.</li>
+<li><a href="https://github.com/PaulSec/awesome-sec-talks">Security Talks</a> - Curated list of security conferences.</li>
+<li><a href="https://github.com/sbilly/awesome-security">Security</a> - Software, libraries, documents, and other resources.</li>
+<li><a href="https://github.com/puresec/awesome-serverless-security/">Serverless Security</a> - Curated list of awesome serverless security resources such as (e)books, articles, whitepapers, blogs and research papers.</li>
+<li><a href="https://github.com/alebcay/awesome-shell">Shell Scripting</a> - Command line frameworks, toolkits, guides and gizmos.</li>
+<li><a href="https://github.com/InQuest/awesome-yara">YARA</a> - YARA rules, tools, and people.</li>
+</ul>
+<h3 id="penetration-testing-report-templates">Penetration Testing Report Templates</h3>
+<ul>
+<li><a href="https://github.com/juliocesarfort/public-pentesting-reports">Public Pentesting Reports</a> - Curated list of public penetration test reports released by several consulting firms and academic security groups.</li>
+<li><a href="https://www.testandverification.com/wp-content/uploads/template-penetration-testing-report-v03.pdf">T&amp;VS Pentesting Report Template</a> - Pentest report template provided by Test and Verification Services, Ltd.</li>
+<li><a href="http://lucideus.com/pdf/stw.pdf">Web Application Security Assessment Report Template</a> - Sample Web application security assessment reporting template provided by Lucideus.</li>
+</ul>
+<h2 id="open-sources-intelligence-osint">Open Sources Intelligence (OSINT)</h2>
+<p>See also <a href="https://github.com/jivoi/awesome-osint">awesome-osint</a>.</p>
+<ul>
+<li><a href="https://github.com/upgoingstar/datasploit">DataSploit</a> - OSINT visualizer utilizing Shodan, Censys, Clearbit, EmailHunter, FullContact, and Zoomeye behind the scenes.</li>
+<li><a href="https://github.com/beurtschipper/Depix">Depix</a> - Tool for recovering passwords from pixelized screenshots (by de-pixelating text).</li>
+<li><a href="https://github.com/gyoisamurai/GyoiThon">GyoiThon</a> - GyoiThon is an Intelligence Gathering tool using Machine Learning.</li>
+<li><a href="http://intrigue.io">Intrigue</a> - Automated OSINT &amp; Attack Surface discovery framework with powerful API, UI and CLI.</li>
+<li><a href="http://www.maltego.com/">Maltego</a> - Proprietary software for open sources intelligence and forensics.</li>
+<li><a href="https://packettotal.com/">PacketTotal</a> - Simple, free, high-quality packet capture file analysis facilitating the quick detection of network-borne malware (using Zeek and Suricata IDS signatures under the hood).</li>
+<li><a href="https://github.com/xillwillx/skiptracer">Skiptracer</a> - OSINT scraping framework that utilizes basic Python webscraping (BeautifulSoup) of PII paywall sites to compile passive information on a target on a ramen noodle budget.</li>
+<li><a href="https://github.com/1N3/Sn1per">Sn1per</a> - Automated Pentest Recon Scanner.</li>
+<li><a href="http://www.spiderfoot.net/">Spiderfoot</a> - Multi-source OSINT automation tool with a Web UI and report visualizations.</li>
+<li><a href="https://github.com/ilektrojohn/creepy">creepy</a> - Geolocation OSINT tool.</li>
+<li><a href="https://github.com/Nhoya/gOSINT">gOSINT</a> - OSINT tool with multiple modules and a telegram scraper.</li>
+<li><a href="https://github.com/ascribe/image-match">image-match</a> - Quickly search over billions of images.</li>
+<li><a href="https://github.com/lanmaster53/recon-ng">recon-ng</a> - Full-featured Web Reconnaissance framework written in Python.</li>
+<li><a href="https://github.com/kpcyrd/sn0int">sn0int</a> - Semi-automatic OSINT framework and package manager.</li>
+<li><a href="https://github.com/narkopolo/fb_friend_list_scraper">Facebook Friend List Scraper</a> - Tool to scrape names and usernames from large friend lists on Facebook, without being rate limited.</li>
+</ul>
+<h3 id="data-broker-and-search-engine-services">Data Broker and Search Engine Services</h3>
+<ul>
+<li><a href="https://hunter.io/">Hunter.io</a> - Data broker providing a Web search interface for discovering the email addresses and other organizational details of a company.</li>
+<li><a href="https://www.threatcrowd.org/">Threat Crowd</a> - Search engine for threats.</li>
+<li><a href="https://www.virustotal.com/">Virus Total</a> - Free service that analyzes suspicious files and URLs and facilitates the quick detection of viruses, worms, trojans, and all kinds of malware.</li>
+<li><a href="https://github.com/kisom/surfraw">surfraw</a> - Fast UNIX command line interface to a variety of popular WWW search engines.</li>
+</ul>
+<h3 id="dorking-tools">Dorking tools</h3>
+<ul>
+<li><a href="https://github.com/Hood3dRob1n/BinGoo">BinGoo</a> - GNU/Linux bash based Bing and Google Dorking Tool.</li>
+<li><a href="https://github.com/utiso/dorkbot">dorkbot</a> - Command-line tool to scan Google (or other) search results for vulnerabilities.</li>
+<li><a href="https://github.com/techgaun/github-dorks">github-dorks</a> - CLI tool to scan GitHub repos/organizations for potential sensitive information leaks.</li>
+<li><a href="https://github.com/k3170makan/GooDork">GooDork</a> - Command line Google dorking tool.</li>
+<li><a href="https://www.exploit-db.com/google-hacking-database/">Google Hacking Database</a> - Database of Google dorks; can be used for recon.</li>
+<li><a href="https://github.com/jgor/dork-cli">dork-cli</a> - Command line Google dork tool.</li>
+<li><a href="https://github.com/USSCltd/dorks">dorks</a> - Google hack database automation tool.</li>
+<li><a href="https://github.com/DanMcInerney/fast-recon">fast-recon</a> - Perform Google dorks against a domain.</li>
+<li><a href="https://github.com/opsdisk/pagodo">pagodo</a> - Automate Google Hacking Database scraping.</li>
+<li><a href="https://github.com/Smaash/snitch">snitch</a> - Information gathering via dorks.</li>
+</ul>
+<h3 id="email-search-and-analysis-tools">Email search and analysis tools</h3>
+<ul>
+<li><a href="https://github.com/SimplySecurity/SimplyEmail">SimplyEmail</a> - Email recon made fast and easy.</li>
+<li><a href="https://github.com/Ekultek/WhatBreach">WhatBreach</a> - Search email addresses and discover all known breaches that this email has been seen in, and download the breached database if it is publicly available.</li>
+</ul>
+<h3 id="metadata-harvesting-and-analysis">Metadata harvesting and analysis</h3>
+<ul>
+<li><a href="https://www.elevenpaths.com/labstools/foca/">FOCA (Fingerprinting Organizations with Collected Archives)</a> - Automated document harvester that searches Google, Bing, and DuckDuckGo to find and extrapolate internal company organizational structures.</li>
+<li><a href="https://github.com/laramies/metagoofil">metagoofil</a> - Metadata harvester.</li>
+<li><a href="https://github.com/laramies/theHarvester">theHarvester</a> - E-mail, subdomain and people names harvester.</li>
+</ul>
+<h3 id="network-device-discovery-tools">Network device discovery tools</h3>
+<ul>
+<li><a href="https://www.censys.io/">Censys</a> - Collects data on hosts and websites through daily ZMap and ZGrab scans.</li>
+<li><a href="https://www.shodan.io/">Shodan</a> - World&rsquo;s first search engine for Internet-connected devices.</li>
+<li><a href="https://www.zoomeye.org/">ZoomEye</a> - Search engine for cyberspace that lets the user find specific network components.</li>
+</ul>
+<h3 id="osint-online-resources">OSINT Online Resources</h3>
+<ul>
+<li><a href="https://github.com/lanrat/certgraph">CertGraph</a> - Crawls a domain&rsquo;s SSL/TLS certificates for its certificate alternative names.</li>
+<li><a href="https://ghostproject.fr/">GhostProject</a> - Searchable database of billions of cleartext passwords, partially visible for free.</li>
+<li><a href="http://netbootcamp.org/osinttools/">NetBootcamp OSINT Tools</a> - Collection of OSINT links and custom Web interfaces to other services.</li>
+<li><a href="http://osintframework.com/">OSINT Framework</a> - Collection of various OSINT tools broken out by category.</li>
+<li><a href="https://wigle.net/">WiGLE.net</a> - Information about wireless networks world-wide, with user-friendly desktop and web applications.</li>
+</ul>
+<h3 id="source-code-repository-searching-tools">Source code repository searching tools</h3>
+<p>See also <em><a href="#web-accessible-source-code-ripping-tools">Web-accessible source code ripping tools</a></em>.</p>
+<ul>
+<li><a href="https://github.com/melvinsh/vcsmap">vcsmap</a> - Plugin-based tool to scan public version control systems for sensitive information.</li>
+<li><a href="https://github.com/Furduhlutur/yar">Yar</a> - Clone git repositories to search through the whole commit history in order of commit time for secrets, tokens, or passwords.</li>
+</ul>
+<h3 id="web-application-and-resource-analysis-tools">Web application and resource analysis tools</h3>
+<ul>
+<li><a href="http://blindelephant.sourceforge.net/">BlindElephant</a> - Web application fingerprinter.</li>
+<li><a href="https://github.com/ChrisTruncer/EyeWitness">EyeWitness</a> - Tool to take screenshots of websites, provide some server header info, and identify default credentials if possible.</li>
+<li><a href="https://graphql-kit.com/graphql-voyager/">GraphQL Voyager</a> - Represent any GraphQL API as an interactive graph, letting you explore data models from any Web site with a GraphQL query endpoint.</li>
+<li><a href="https://github.com/codingo/VHostScan">VHostScan</a> - Virtual host scanner that performs reverse lookups, can be used with pivot tools, detect catch-all scenarios, aliases and dynamic default pages.</li>
+<li><a href="https://www.wappalyzer.com/">Wappalyzer</a> - Wappalyzer uncovers the technologies used on websites.</li>
+<li><a href="https://github.com/Ekultek/WhatWaf">WhatWaf</a> - Detect and bypass web application firewalls and protection systems.</li>
+<li><a href="https://github.com/urbanadventurer/WhatWeb">WhatWeb</a> - Website fingerprinter.</li>
+<li><a href="https://github.com/EnableSecurity/wafw00f">wafw00f</a> - Identifies and fingerprints Web Application Firewall (WAF) products.</li>
+<li><a href="https://github.com/maaaaz/webscreenshot">webscreenshot</a> - Simple script to take screenshots of websites from a list of sites.</li>
+</ul>
+<h2 id="operating-system-distributions">Operating System Distributions</h2>
+<ul>
+<li><a href="https://androidtamer.com/">Android Tamer</a> - Distribution built for Android security professionals that includes tools required for Android security testing.</li>
+<li><a href="https://archstrike.org/">ArchStrike</a> - Arch GNU/Linux repository for security professionals and enthusiasts.</li>
+<li><a href="https://github.com/adi0x90/attifyos">AttifyOS</a> - GNU/Linux distribution focused on tools useful during Internet of Things (IoT) security assessments.</li>
+<li><a href="https://www.blackarch.org/">BlackArch</a> - Arch GNU/Linux-based distribution for penetration testers and security researchers.</li>
+<li><a href="https://inteltechniques.com/buscador/">Buscador</a> - GNU/Linux virtual machine that is pre-configured for online investigators.</li>
+<li><a href="https://www.kali.org/">Kali</a> - Rolling Debian-based GNU/Linux distribution designed for penetration testing and digital forensics.</li>
+<li><a href="http://networksecuritytoolkit.org/">Network Security Toolkit (NST)</a> - Fedora-based GNU/Linux bootable live Operating System designed to provide easy access to best-of-breed open source network security applications.</li>
+<li><a href="https://parrotlinux.org/">Parrot</a> - Distribution similar to Kali, with support for multiple hardware architectures.</li>
+<li><a href="https://pentestbox.org/">PentestBox</a> - Open source pre-configured portable penetration testing environment for the Windows Operating System.</li>
+<li><a href="https://github.com/trustedsec/ptf">The Pentesters Framework</a> - Distro organized around the Penetration Testing Execution Standard (PTES), providing a curated collection of utilities that omits less frequently used utilities.</li>
+</ul>
+<h2 id="periodicals">Periodicals</h2>
+<ul>
+<li><a href="https://www.2600.com/Magazine/DigitalEditions">2600: The Hacker Quarterly</a> - American publication about technology and computer &ldquo;underground&rdquo; culture.</li>
+<li><a href="http://www.phrack.org/">Phrack Magazine</a> - By far the longest running hacker zine.</li>
+</ul>
+<h2 id="physical-access-tools">Physical Access Tools</h2>
+<ul>
+<li><a href="https://atcommands.org/">AT Commands</a> - Use AT commands over an Android device&rsquo;s USB port to rewrite device firmware, bypass security mechanisms, exfiltrate sensitive information, perform screen unlocks, and inject touch events.</li>
+<li><a href="https://www.hak5.org/gear/bash-bunny">Bash Bunny</a> - Local exploit delivery tool in the form of a USB thumbdrive in which you write payloads in a DSL called BunnyScript.</li>
+<li><a href="https://lanturtle.com/">LAN Turtle</a> - Covert &ldquo;USB Ethernet Adapter&rdquo; that provides remote access, network intelligence gathering, and MITM capabilities when installed in a local network.</li>
+<li><a href="https://github.com/ufrisk/pcileech">PCILeech</a> - Uses PCIe hardware devices to read and write from the target system memory via Direct Memory Access (DMA) over PCIe.</li>
+<li><a href="https://www.hak5.org/gear/packet-squirrel">Packet Squirrel</a> - Ethernet multi-tool designed to enable covert remote access, painless packet captures, and secure VPN connections with the flip of a switch.</li>
+<li><a href="https://samy.pl/poisontap/">Poisontap</a> - Siphons cookies, exposes internal (LAN-side) router and installs web backdoor on locked computers.</li>
+<li><a href="https://proxmark3.com/">Proxmark3</a> - RFID/NFC cloning, replay, and spoofing toolkit often used for analyzing and attacking proximity cards/readers, wireless keys/keyfobs, and more.</li>
+<li><a href="https://thunderclap.io/">Thunderclap</a> - Open source I/O security research platform for auditing physical DMA-enabled hardware peripheral ports.</li>
+<li><a href="http://usbrubberducky.com/">USB Rubber Ducky</a> - Customizable keystroke injection attack platform masquerading as a USB thumbdrive.</li>
+</ul>
+<h2 id="privilege-escalation-tools">Privilege Escalation Tools</h2>
+<ul>
+<li><a href="https://github.com/hausec/ADAPE-Script">Active Directory and Privilege Escalation (ADAPE)</a> - Umbrella script that automates numerous useful PowerShell modules to discover security misconfigurations and attempt privilege escalation against Active Directory.</li>
+<li><a href="https://gtfobins.github.io/">GTFOBins</a> - Curated list of Unix binaries that can be used to bypass local security restrictions in misconfigured systems.</li>
+<li><a href="https://lolbas-project.github.io/">LOLBAS (Living Off The Land Binaries and Scripts)</a> - Documents binaries, scripts, and libraries that can be used for &ldquo;Living Off The Land&rdquo; techniques, i.e., binaries that can be used by an attacker to perform actions beyond their original purpose.</li>
+<li><a href="https://github.com/rebootuser/LinEnum">LinEnum</a> - Scripted local Linux enumeration and privilege escalation checker useful for auditing a host and during CTF gaming.</li>
+<li><a href="https://github.com/mbahadou/postenum">Postenum</a> - Shell script used for enumerating possible privilege escalation opportunities on a local GNU/Linux system.</li>
+<li><a href="https://github.com/pentestmonkey/unix-privesc-check">unix-privesc-check</a> - Shell script to check for simple privilege escalation vectors on UNIX systems.</li>
+</ul>
+<h3 id="password-spraying-tools">Password Spraying Tools</h3>
+<ul>
+<li><a href="https://github.com/dafthack/DomainPasswordSpray">DomainPasswordSpray</a> - Tool written in PowerShell to perform a password spray attack against users of a domain.</li>
+<li><a href="https://github.com/byt3bl33d3r/SprayingToolkit">SprayingToolkit</a> - Scripts to make password spraying attacks against Lync/S4B, Outlook Web Access (OWA) and Office 365 (O365) a lot quicker, less painful and more efficient.</li>
+</ul>
+<h2 id="reverse-engineering">Reverse Engineering</h2>
+<p>See also <a href="https://github.com/tylerha97/awesome-reversing">awesome-reversing</a>, <a href="#exploit-development-tools"><em>Exploit Development Tools</em></a>.</p>
+<h3 id="reverse-engineering-books">Reverse Engineering Books</h3>
+<ul>
+<li><a href="http://www.amazon.com/Hacking-Ethical-Hackers-Handbook-Edition/dp/0071832386">Gray Hat Hacking The Ethical Hacker&rsquo;s Handbook by Daniel Regalado et al., 2015</a></li>
+<li><a href="https://nostarch.com/xbox.htm">Hacking the Xbox by Andrew Huang, 2003</a></li>
+<li><a href="http://www.wiley.com/WileyCDA/WileyTitle/productCd-1118787315.html">Practical Reverse Engineering by Bruce Dang et al., 2014</a></li>
+<li><a href="http://beginners.re/">Reverse Engineering for Beginners by Dennis Yurichev</a></li>
+<li><a href="https://nostarch.com/idapro2.htm">The IDA Pro Book by Chris Eagle, 2011</a></li>
+</ul>
+<h3 id="reverse-engineering-tools">Reverse Engineering Tools</h3>
+<ul>
+<li><a href="https://angr.io/">angr</a> - Platform-agnostic binary analysis framework.</li>
+<li><a href="http://www.capstone-engine.org/">Capstone</a> - Lightweight multi-platform, multi-architecture disassembly framework.</li>
+<li><a href="https://github.com/horsicq/Detect-It-Easy">Detect It Easy(DiE)</a> - Program for determining types of files for Windows, Linux and MacOS.</li>
+<li><a href="http://www.codef00.com/projects#debugger">Evan&rsquo;s Debugger</a> - OllyDbg-like debugger for GNU/Linux.</li>
+<li><a href="https://www.frida.re/">Frida</a> - Dynamic instrumentation toolkit for developers, reverse-engineers, and security researchers.</li>
+<li><a href="https://github.com/NorthwaveNL/fridax">Fridax</a> - Read variables and intercept/hook functions in Xamarin/Mono JIT and AOT compiled iOS/Android applications.</li>
+<li><a href="https://www.ghidra-sre.org/">Ghidra</a> - Suite of free software reverse engineering tools developed by NSA&rsquo;s Research Directorate originally exposed in WikiLeaks&rsquo;s &ldquo;Vault 7&rdquo; publication and now maintained as open source software.</li>
+<li><a href="https://immunityinc.com/products/debugger/">Immunity Debugger</a> - Powerful way to write exploits and analyze malware.</li>
+<li><a href="https://www.hex-rays.com/products/ida/">Interactive Disassembler (IDA Pro)</a> - Proprietary multi-processor disassembler and debugger for Windows, GNU/Linux, or macOS; also has a free version, <a href="https://www.hex-rays.com/products/ida/support/download_freeware.shtml">IDA Free</a>.</li>
+<li><a href="https://github.com/wisk/medusa">Medusa</a> - Open source, cross-platform interactive disassembler.</li>
+<li><a href="http://www.ollydbg.de/">OllyDbg</a> - x86 debugger for Windows binaries that emphasizes binary code analysis.</li>
+<li><a href="https://github.com/Cisco-Talos/pyrebox">PyREBox</a> - Python scriptable Reverse Engineering sandbox by Cisco-Talos.</li>
+<li><a href="http://rada.re/r/index.html">Radare2</a> - Open source, crossplatform reverse engineering framework.</li>
+<li><a href="https://github.com/LongSoft/UEFITool">UEFITool</a> - UEFI firmware image viewer and editor.</li>
+<li><a href="https://github.com/snare/voltron">Voltron</a> - Extensible debugger UI toolkit written in Python.</li>
+<li><a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/debugger/debugger-download-tools">WDK/WinDbg</a> - Windows Driver Kit and WinDbg.</li>
+<li><a href="https://github.com/devttys0/binwalk">binwalk</a> - Fast, easy to use tool for analyzing, reverse engineering, and extracting firmware images.</li>
+<li><a href="https://github.com/kpcyrd/boxxy-rs">boxxy</a> - Linkable sandbox explorer.</li>
+<li><a href="https://github.com/0xd4d/dnSpy">dnSpy</a> - Tool to reverse engineer .NET assemblies.</li>
+<li><a href="https://github.com/joelpx/plasma">plasma</a> - Interactive disassembler for x86/ARM/MIPS. Generates indented pseudo-code with colored syntax code.</li>
+<li><a href="https://github.com/pwndbg/pwndbg">pwndbg</a> - GDB plug-in that eases debugging with GDB, with a focus on features needed by low-level software developers, hardware hackers, reverse-engineers, and exploit developers.</li>
+<li><a href="https://github.com/fireeye/rVMI">rVMI</a> - Debugger on steroids; inspect userspace processes, kernel drivers, and preboot environments in a single tool.</li>
+<li><a href="http://x64dbg.com/">x64dbg</a> - Open source x64/x32 debugger for windows.</li>
+</ul>
+<h2 id="security-education-courses">Security Education Courses</h2>
+<ul>
+<li><a href="http://azcwr.org/">ARIZONA CYBER WARFARE RANGE</a> - 24x7 live fire exercises for beginners through real world operations; capability for upward progression into the real world of cyber warfare.</li>
+<li><a href="http://cybrary.it">Cybrary</a> - Free courses in ethical hacking and advanced penetration testing. Advanced penetration testing courses are based on the book &lsquo;Penetration Testing for Highly Secured Environments&rsquo;.</li>
+<li><a href="https://www.enisa.europa.eu/topics/trainings-for-cybersecurity-specialists/online-training-material">European Union Agency for Network and Information Security</a> - ENISA Cyber Security Training material.</li>
+<li><a href="https://www.offensive-security.com/information-security-training/">Offensive Security Training</a> - Training from BackTrack/Kali developers.</li>
+<li><a href="http://opensecuritytraining.info/">Open Security Training</a> - Training material for computer security classes.</li>
+<li><a href="https://www.hoppersroppers.org/training.html">Roppers Academy Training</a> - Free courses on computing and security fundamentals designed to train a beginner to crush their first CTF.</li>
+<li><a href="http://www.sans.org/">SANS Security Training</a> - Computer Security Training &amp; Certification.</li>
+</ul>
+<h2 id="shellcoding-guides-and-tutorials">Shellcoding Guides and Tutorials</h2>
+<ul>
+<li><a href="https://www.corelan.be/index.php/2009/07/19/exploit-writing-tutorial-part-1-stack-based-overflows/">Exploit Writing Tutorials</a> - Tutorials on how to develop exploits.</li>
+<li><a href="http://shell-storm.org/shellcode/">Shellcode Examples</a> - Shellcodes database.</li>
+<li><a href="http://www.vividmachines.com/shellcode/shellcode.html">Shellcode Tutorial</a> - Tutorial on how to write shellcode.</li>
+<li><a href="http://www.wiley.com/WileyCDA/WileyTitle/productCd-047008023X.html">The Shellcoder&rsquo;s Handbook by Chris Anley et al., 2007</a></li>
+</ul>
+<h2 id="side-channel-tools">Side-channel Tools</h2>
+<ul>
+<li><a href="http://chipwhisperer.com">ChipWhisperer</a> - Complete open-source toolchain for side-channel power analysis and glitching attacks.</li>
+<li><a href="https://github.com/jovanbulck/sgx-step">SGX-Step</a> - Open-source framework to facilitate side-channel attack research on Intel x86 processors in general and Intel SGX (Software Guard Extensions) platforms in particular.</li>
+<li><a href="https://github.com/vusec/trrespass">TRRespass</a> - Many-sided rowhammer tool suite able to reverse engineer the contents of DDR3 and DDR4 memory chips protected by Target Row Refresh mitigations.</li>
+</ul>
+<h2 id="social-engineering">Social Engineering</h2>
+<p>See also <a href="https://github.com/v2-dev/awesome-social-engineering">awesome-social-engineering</a>.</p>
+<h3 id="social-engineering-books">Social Engineering Books</h3>
+<ul>
+<li><a href="http://www.hachettebookgroup.com/titles/kevin-mitnick/ghost-in-the-wires/9780316134477/">Ghost in the Wires by Kevin D. Mitnick &amp; William L. Simon, 2011</a></li>
+<li><a href="https://www.elsevier.com/books/no-tech-hacking/mitnick/978-1-59749-215-7">No Tech Hacking by Johnny Long &amp; Jack Wiles, 2008</a></li>
+<li><a href="https://www.mhprofessional.com/9780071818469-usa-social-engineering-in-it-security-tools-tactics-and-techniques-group">Social Engineering in IT Security: Tools, Tactics, and Techniques by Sharon Conheady, 2014</a></li>
+<li><a href="http://www.wiley.com/WileyCDA/WileyTitle/productCd-0471237124.html">The Art of Deception by Kevin D. Mitnick &amp; William L. Simon, 2002</a></li>
+<li><a href="http://www.wiley.com/WileyCDA/WileyTitle/productCd-0764569597.html">The Art of Intrusion by Kevin D. Mitnick &amp; William L. Simon, 2005</a></li>
+<li><a href="http://www.wiley.com/WileyCDA/WileyTitle/productCd-1118608577.html">Unmasking the Social Engineer: The Human Element of Security by Christopher Hadnagy, 2014</a></li>
+</ul>
+<h3 id="social-engineering-online-resources">Social Engineering Online Resources</h3>
+<ul>
+<li><a href="http://www.social-engineer.org/framework/general-discussion/">Social Engineering Framework</a> - Information resource for social engineers.</li>
+</ul>
+<h3 id="social-engineering-tools">Social Engineering Tools</h3>
+<ul>
+<li><a href="https://github.com/4w4k3/BeeLogger">Beelogger</a> - Tool for generating keylooger.</li>
+<li><a href="https://github.com/ring0lab/catphish">Catphish</a> - Tool for phishing and corporate espionage written in Ruby.</li>
+<li><a href="https://github.com/kgretzky/evilginx2">Evilginx2</a> - Standalone Machine-in-the-Middle (MitM) reverse proxy attack framework for setting up phishing pages capable of defeating most forms of 2FA security schemes.</li>
+<li><a href="https://github.com/Raikia/FiercePhish">FiercePhish</a> - Full-fledged phishing framework to manage all phishing engagements.</li>
+<li><a href="https://getgophish.com">Gophish</a> - Open-source phishing framework.</li>
+<li><a href="https://github.com/securestate/king-phisher">King Phisher</a> - Phishing campaign toolkit used for creating and managing multiple simultaneous phishing attacks with custom email and server content.</li>
+<li><a href="https://github.com/drk1wi/Modlishka">Modlishka</a> - Flexible and powerful reverse proxy with real-time two-factor authentication.</li>
+<li><a href="https://github.com/fireeye/ReelPhish">ReelPhish</a> - Real-time two-factor phishing tool.</li>
+<li><a href="https://github.com/trustedsec/social-engineer-toolkit">Social Engineer Toolkit (SET)</a> - Open source pentesting framework designed for social engineering featuring a number of custom attack vectors to make believable attacks quickly.</li>
+<li><a href="https://github.com/UndeadSec/SocialFish">SocialFish</a> - Social media phishing framework that can run on an Android phone or in a Docker container.</li>
+<li><a href="https://github.com/ryhanson/phishery">phishery</a> - TLS/SSL enabled Basic Auth credential harvester.</li>
+<li><a href="https://github.com/sophron/wifiphisher">wifiphisher</a> - Automated phishing attacks against WiFi networks.</li>
+</ul>
+<h2 id="static-analyzers">Static Analyzers</h2>
+<ul>
+<li><a href="https://github.com/presidentbeef/brakeman">Brakeman</a> - Static analysis security vulnerability scanner for Ruby on Rails applications.</li>
+<li><a href="http://findbugs.sourceforge.net/">FindBugs</a> - Free software static analyzer to look for bugs in Java code.</li>
+<li><a href="https://github.com/designsecurity/progpilot">Progpilot</a> - Static security analysis tool for PHP code.</li>
+<li><a href="https://github.com/jagracey/RegEx-DoS">RegEx-DoS</a> - Analyzes source code for Regular Expressions susceptible to Denial of Service attacks.</li>
+<li><a href="https://pypi.python.org/pypi/bandit/">bandit</a> - Security oriented static analyser for Python code.</li>
+<li><a href="http://cppcheck.sourceforge.net/">cppcheck</a> - Extensible C/C++ static analyzer focused on finding bugs.</li>
+<li><a href="https://github.com/nccgroup/sobelow">sobelow</a> - Security-focused static analysis for the Phoenix Framework.</li>
+<li><a href="https://github.com/fkie-cad/cwe_checker">cwe_checker</a> - Suite of tools built atop the Binary Analysis Platform (BAP) to heuristically detect CWEs in compiled binaries and firmware.</li>
+</ul>
+<h2 id="steganography-tools">Steganography Tools</h2>
+<ul>
+<li><a href="https://github.com/TryCatchHCF/Cloakify">Cloakify</a> - Textual steganography toolkit that converts any filetype into lists of everyday strings.</li>
+<li><a href="https://stegonline.georgeom.net/">StegOnline</a> - Web-based, enhanced, and open-source port of StegSolve.</li>
+<li><a href="https://github.com/Paradoxis/StegCracker">StegCracker</a> - Steganography brute-force utility to uncover hidden data inside files.</li>
+</ul>
+<h2 id="vulnerability-databases">Vulnerability Databases</h2>
+<ul>
+<li><a href="http://www.securityfocus.com/bid/">Bugtraq (BID)</a> - Software security bug identification database compiled from submissions to the SecurityFocus mailing list and other sources, operated by Symantec, Inc.</li>
+<li><a href="https://www.cisa.gov/known-exploited-vulnerabilities-catalog">CISA Known Vulnerabilities Database (KEV)</a> - Vulnerabilities in various systems already known to America&rsquo;s cyber defense agency, the Cybersecurity and Infrastructure Security Agency, to be actively exploited.</li>
+<li><a href="https://cxsecurity.com/">CXSecurity</a> - Archive of published CVE and Bugtraq software vulnerabilities cross-referenced with a Google dork database for discovering the listed vulnerability.</li>
+<li><a href="http://www.cnnvd.org.cn/">China National Vulnerability Database (CNNVD)</a> - Chinese government-run vulnerability database analoguous to the United States&rsquo;s CVE database hosted by Mitre Corporation.</li>
+<li><a href="https://cve.mitre.org/">Common Vulnerabilities and Exposures (CVE)</a> - Dictionary of common names (i.e., CVE Identifiers) for publicly known security vulnerabilities.</li>
+<li><a href="https://www.exploit-db.com/">Exploit-DB</a> - Non-profit project hosting exploits for software vulnerabilities, provided as a public service by Offensive Security.</li>
+<li><a href="http://seclists.org/fulldisclosure/">Full-Disclosure</a> - Public, vendor-neutral forum for detailed discussion of vulnerabilities, often publishes details before many other sources.</li>
+<li><a href="https://github.com/advisories/">GitHub Advisories</a> - Public vulnerability advisories published by or affecting codebases hosted by GitHub, including open source projects.</li>
+<li><a href="https://hpi-vdb.de/">HPI-VDB</a> - Aggregator of cross-referenced software vulnerabilities offering free-of-charge API access, provided by the Hasso-Plattner Institute, Potsdam.</li>
+<li><a href="https://www.0day.today/">Inj3ct0r</a> - Exploit marketplace and vulnerability information aggregator. (<a href="http://mvfjfugdwgc5uwho.onion/">Onion service</a>.)</li>
+<li><a href="https://docs.microsoft.com/en-us/security-updates/">Microsoft Security Advisories and Bulletins</a> - Archive and announcements of security advisories impacting Microsoft software, published by the Microsoft Security Response Center (MSRC).</li>
+<li><a href="https://www.mozilla.org/security/advisories/">Mozilla Foundation Security Advisories</a> - Archive of security advisories impacting Mozilla software, including the Firefox Web Browser.</li>
+<li><a href="https://nvd.nist.gov/">National Vulnerability Database (NVD)</a> - United States government&rsquo;s National Vulnerability Database provides additional meta-data (CPE, CVSS scoring) of the standard CVE List along with a fine-grained search engine.</li>
+<li><a href="https://osv.dev/">Open Source Vulnerabilities (OSV)</a> - Database of vulnerabilities affecting open source software, queryable by project, Git commit, or version.</li>
+<li><a href="https://packetstormsecurity.com/files/">Packet Storm</a> - Compendium of exploits, advisories, tools, and other security-related resources aggregated from across the industry.</li>
+<li><a href="http://www.securiteam.com/">SecuriTeam</a> - Independent source of software vulnerability information.</li>
+<li><a href="https://snyk.io/vuln/">Snyk Vulnerability DB</a> - Detailed information and remediation guidance for vulnerabilities known by Snyk.</li>
+<li><a href="https://www.kb.cert.org/vuls/">US-CERT Vulnerability Notes Database</a> - Summaries, technical details, remediation information, and lists of vendors affected by software vulnerabilities, aggregated by the United States Computer Emergency Response Team (US-CERT).</li>
+<li><a href="https://vuldb.com">VulDB</a> - Independent vulnerability database with user community, exploit details, and additional meta data (e.g. CPE, CVSS, CWE)</li>
+<li><a href="https://www.vulnerability-lab.com/">Vulnerability Lab</a> - Open forum for security advisories organized by category of exploit target.</li>
+<li><a href="https://vulners.com/">Vulners</a> - Security database of software vulnerabilities.</li>
+<li><a href="https://vulmon.com/">Vulmon</a> - Vulnerability search engine with vulnerability intelligence features that conducts full text searches in its database.</li>
+<li><a href="http://zerodayinitiative.com/advisories/published/">Zero Day Initiative</a> - Bug bounty program with publicly accessible archive of published security advisories, operated by TippingPoint.</li>
+</ul>
+<h2 id="web-exploitation">Web Exploitation</h2>
+<ul>
+<li><a href="https://github.com/fuzzdb-project/fuzzdb">FuzzDB</a> - Dictionary of attack patterns and primitives for black-box application fault injection and resource discovery.</li>
+<li><a href="https://www.owasp.org/index.php/OWASP_OWTF">Offensive Web Testing Framework (OWTF)</a> - Python-based framework for pentesting Web applications based on the OWASP Testing Guide.</li>
+<li><a href="https://github.com/evyatarmeged/Raccoon">Raccoon</a> - High performance offensive security tool for reconnaissance and vulnerability scanning.</li>
+<li><a href="https://github.com/espreto/wpsploit">WPSploit</a> - Exploit WordPress-powered websites with Metasploit.</li>
+<li><a href="https://www.nccgroup.trust/us/about-us/newsroom-and-events/blog/2017/march/autochrome/">autochrome</a> - Chrome browser profile preconfigured with appropriate settings needed for web application testing.</li>
+<li><a href="https://github.com/kpcyrd/badtouch">badtouch</a> - Scriptable network authentication cracker.</li>
+<li><a href="https://github.com/OJ/gobuster">gobuster</a> - Lean multipurpose brute force search/fuzzing tool for Web (and DNS) reconnaissance.</li>
+<li><a href="https://github.com/LeonardoNve/sslstrip2">sslstrip2</a> - SSLStrip version to defeat HSTS.</li>
+<li><a href="https://www.thoughtcrime.org/software/sslstrip/">sslstrip</a> - Demonstration of the HTTPS stripping attacks.</li>
+</ul>
+<h3 id="intercepting-web-proxies">Intercepting Web proxies</h3>
+<p>See also <em><a href="#proxies-and-machine-in-the-middle-mitm-tools">Proxies and Machine-in-the-Middle (MITM) Tools</a></em>.</p>
+<ul>
+<li><a href="https://portswigger.net/burp/">Burp Suite</a> - Integrated platform for performing security testing of web applications.</li>
+<li><a href="https://www.telerik.com/fiddler">Fiddler</a> - Free cross-platform web debugging proxy with user-friendly companion tools.</li>
+<li><a href="https://www.zaproxy.org/">OWASP Zed Attack Proxy (ZAP)</a> - Feature-rich, scriptable HTTP intercepting proxy and fuzzer for penetration testing web applications.</li>
+<li><a href="https://mitmproxy.org/">mitmproxy</a> - Interactive TLS-capable intercepting HTTP proxy for penetration testers and software developers.</li>
+</ul>
+<h3 id="web-file-inclusion-tools">Web file inclusion tools</h3>
+<ul>
+<li><a href="https://github.com/P0cL4bs/Kadimus">Kadimus</a> - LFI scan and exploit tool.</li>
+<li><a href="https://github.com/D35m0nd142/LFISuite">LFISuite</a> - Automatic LFI scanner and exploiter.</li>
+<li><a href="https://github.com/kurobeats/fimap">fimap</a> - Find, prepare, audit, exploit and even Google automatically for LFI/RFI bugs.</li>
+<li><a href="https://github.com/hvqzao/liffy">liffy</a> - LFI exploitation tool.</li>
+</ul>
+<h3 id="web-injection-tools">Web injection tools</h3>
+<ul>
+<li><a href="https://github.com/commixproject/commix">Commix</a> - Automated all-in-one operating system command injection and exploitation tool.</li>
+<li><a href="https://github.com/codingo/NoSQLMap">NoSQLmap</a> - Automatic NoSQL injection and database takeover tool.</li>
+<li><a href="http://sqlmap.org/">SQLmap</a> - Automatic SQL injection and database takeover tool.</li>
+<li><a href="https://github.com/epinna/tplmap">tplmap</a> - Automatic server-side template injection and Web server takeover tool.</li>
+</ul>
+<h3 id="web-path-discovery-and-bruteforcing-tools">Web path discovery and bruteforcing tools</h3>
+<ul>
+<li><a href="https://dotdotpwn.blogspot.com/">DotDotPwn</a> - Directory traversal fuzzer.</li>
+<li><a href="https://github.com/maurosoria/dirsearch">dirsearch</a> - Web path scanner.</li>
+<li><a href="https://github.com/c-sto/recursebuster">recursebuster</a> - Content discovery tool to perform directory and file bruteforcing.</li>
+</ul>
+<h3 id="web-shells-and-c2-frameworks">Web shells and C2 frameworks</h3>
+<ul>
+<li><a href="https://github.com/beefproject/beef">Browser Exploitation Framework (BeEF)</a> - Command and control server for delivering exploits to commandeered Web browsers.</li>
+<li><a href="https://github.com/dotcppfile/DAws">DAws</a> - Advanced Web shell.</li>
+<li><a href="https://github.com/Ne0nd0g/merlin">Merlin</a> - Cross-platform post-exploitation HTTP/2 Command and Control server and agent written in Golang.</li>
+<li><a href="https://github.com/nil0x42/phpsploit">PhpSploit</a> - Full-featured C2 framework which silently persists on webserver via evil PHP oneliner.</li>
+<li><a href="https://github.com/antonioCoco/SharPyShell">SharPyShell</a> - Tiny and obfuscated ASP.NET webshell for C# web applications.</li>
+<li><a href="https://github.com/epinna/weevely3">weevely3</a> - Weaponized PHP-based web shell.</li>
+</ul>
+<h3 id="web-accessible-source-code-ripping-tools">Web-accessible source code ripping tools</h3>
+<ul>
+<li><a href="https://github.com/kost/dvcs-ripper">DVCS Ripper</a> - Rip web accessible (distributed) version control systems: SVN/GIT/HG/BZR.</li>
+<li><a href="https://github.com/internetwache/GitTools">GitTools</a> - Automatically find and download Web-accessible <code>.git</code> repositories.</li>
+<li><a href="https://github.com/arthaud/git-dumper">git-dumper</a> - Tool to dump a git repository from a website.</li>
+<li><a href="https://github.com/HightechSec/git-scanner">git-scanner</a> - Tool for bug hunting or pentesting websites that have open <code>.git</code> repositories available in public.</li>
+</ul>
+<h3 id="web-exploitation-books">Web Exploitation Books</h3>
+<ul>
+<li><a href="http://www.wiley.com/WileyCDA/WileyTitle/productCd-1118662091.html">The Browser Hacker&rsquo;s Handbook by Wade Alcorn et al., 2014</a></li>
+<li><a href="http://www.wiley.com/WileyCDA/WileyTitle/productCd-1118026470.html">The Web Application Hacker&rsquo;s Handbook by D. Stuttard, M. Pinto, 2011</a></li>
+</ul>
+<h2 id="windows-utilities">Windows Utilities</h2>
+<ul>
+<li><a href="https://github.com/adaptivethreat/Bloodhound/wiki">Bloodhound</a> - Graphical Active Directory trust relationship explorer.</li>
+<li><a href="https://github.com/fireeye/commando-vm">Commando VM</a> - Automated installation of over 140 Windows software packages for penetration testing and red teaming.</li>
+<li><a href="https://github.com/cobbr/Covenant">Covenant</a> - ASP.NET Core application that serves as a collaborative command and control platform for red teamers.</li>
+<li><a href="https://github.com/taviso/ctftool">ctftool</a> - Interactive Collaborative Translation Framework (CTF) exploration tool capable of launching cross-session edit session attacks.</li>
+<li><a href="https://github.com/byt3bl33d3r/DeathStar">DeathStar</a> - Python script that uses Empire&rsquo;s RESTful API to automate gaining Domain Admin rights in Active Directory environments.</li>
+<li><a href="https://www.powershellempire.com/">Empire</a> - Pure PowerShell post-exploitation agent.</li>
+<li><a href="https://github.com/rabbitstack/fibratus">Fibratus</a> - Tool for exploration and tracing of the Windows kernel.</li>
+<li><a href="https://github.com/Kevin-Robertson/Inveigh">Inveigh</a> - Windows PowerShell ADIDNS/LLMNR/mDNS/NBNS spoofer/machine-in-the-middle tool.</li>
+<li><a href="https://github.com/AlessandroZ/LaZagne">LaZagne</a> - Credentials recovery project.</li>
+<li><a href="https://github.com/dafthack/MailSniper">MailSniper</a> - Modular tool for searching through email in a Microsoft Exchange environment, gathering the Global Address List from Outlook Web Access (OWA) and Exchange Web Services (EWS), and more.</li>
+<li><a href="https://github.com/PowerShellMafia/PowerSploit">PowerSploit</a> - PowerShell Post-Exploitation Framework.</li>
+<li><a href="https://github.com/trustedsec/ridenum">RID_ENUM</a> - Python script that can enumerate all users from a Windows Domain Controller and crack those user&rsquo;s passwords using brute-force.</li>
+<li><a href="https://github.com/SpiderLabs/Responder">Responder</a> - Link-Local Multicast Name Resolution (LLMNR), NBT-NS, and mDNS poisoner.</li>
+<li><a href="https://github.com/GhostPack/Rubeus">Rubeus</a> - Toolset for raw Kerberos interaction and abuses.</li>
+<li><a href="https://github.com/sensepost/ruler">Ruler</a> - Abuses client-side Outlook features to gain a remote shell on a Microsoft Exchange server.</li>
+<li><a href="https://github.com/nccgroup/SCOMDecrypt">SCOMDecrypt</a> - Retrieve and decrypt RunAs credentials stored within Microsoft System Center Operations Manager (SCOM) databases.</li>
+<li><a href="https://docs.microsoft.com/en-us/sysinternals/downloads/sysinternals-suite">Sysinternals Suite</a> - The Sysinternals Troubleshooting Utilities.</li>
+<li><a href="https://www.ampliasecurity.com/research/windows-credentials-editor/">Windows Credentials Editor</a> - Inspect logon sessions and add, change, list, and delete associated credentials, including Kerberos tickets.</li>
+<li><a href="https://github.com/GDSSecurity/Windows-Exploit-Suggester">Windows Exploit Suggester</a> - Detects potential missing patches on the target.</li>
+<li><a href="http://blog.gentilkiwi.com/mimikatz">mimikatz</a> - Credentials extraction tool for Windows operating system.</li>
+<li><a href="https://github.com/nccgroup/redsnarf">redsnarf</a> - Post-exploitation tool for retrieving password hashes and credentials from Windows workstations, servers, and domain controllers.</li>
+<li><a href="https://labs.mwrinfosecurity.com/tools/wepwnise/">wePWNise</a> - Generates architecture independent VBA code to be used in Office documents or templates and automates bypassing application control and exploit mitigation software.</li>
+<li><a href="https://github.com/SecureThisShit/WinPwn">WinPwn</a> - Internal penetration test script to perform local and domain reconnaissance, privilege escalation and exploitation.</li>
+</ul>
+
+			</div>
+		</article>
+	</main>
+<aside>
+	<div>
+		<div>
+			<h3>LATEST POSTS</h3>
+		</div>
+		<div>
+			<ul>
+				
+			</ul>
+		</div>
+	</div>
+</aside>
+
+
+	<footer>
+	<p>&copy; 2024 <a href="https://0sint.ir/"><b>Alireza Gharib. All right reserved</b></a>.
+	<a href="https://github.com/Gharib110"><b>Github</b></a>.
+	</p>
+</footer>
+
+</body>
+</html>
